@@ -14,7 +14,7 @@
 | **Total Lines Removed** | `-287` |
 | **High Risk Mod Patches** | `0` mod(s) |
 | **Medium Risk Mod Patches** | `11` mod(s) |
-| **Transpiler Hooks Audited** | `17` total (`1` modified / `16` verified safe) |
+| **Transpiler Hooks Audited** | `17` total (`16` safe / `1` caution / `0` critical) |
 
 ## 🔬 Transpiler Safety Audit
 
@@ -112,13 +112,13 @@ Audits every Harmony Transpiler across workspace mods to verify whether the unde
       <td colspan="3"><em>Class 'Inventory' was modified elsewhere, but method 'FindFreeStackSpace' is UNTOUCHED.</em></td>
     </tr>
     <tr>
-      <td align="center" rowspan="2">🚨 <code>CRITICAL</code></td>
+      <td align="center" rowspan="2">⚠️ <code>CAUTION</code></td>
       <td><strong><code>Vapok.Common</code></strong></td>
       <td><code>Inventory.FindFreeStackItem</code></td>
       <td><code>CustomDataManager.cs:681</code></td>
     </tr>
     <tr>
-      <td colspan="3"><em>Vanilla method 'Inventory.FindFreeStackItem' was MODIFIED! IL opcodes/offsets likely altered.</em></td>
+      <td colspan="3"><em>Target method 'Inventory.FindFreeStackItem' was MODIFIED in this update. Review recommended to verify IL instructions.</em></td>
     </tr>
     <tr>
       <td align="center" rowspan="2">🟢 <code>SAFE</code></td>
