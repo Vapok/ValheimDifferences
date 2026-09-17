@@ -20,25 +20,171 @@
 
 Audits every Harmony Transpiler across workspace mods to verify whether the underlying vanilla IL hook methods were modified in this game version.
 
-| Status | Mod | Hook Target Class & Method | Audit Result | Source Location |
-| :---: | :--- | :--- | :--- | :--- |
-| 🟢 `SAFE` | **`AdventureBackpacks`** | `ItemData.GetWeight` | Class 'ItemData' and method 'GetWeight' are 100% UNCHANGED. | `ItemDrop.cs:14` |
-| 🟢 `SAFE` | **`AdventureBackpacks`** | `Container.Awake` | Class 'Container' and method 'Awake' are 100% UNCHANGED. | `Container.cs:68` |
-| 🛡️ `VERIFIED SAFE` | **`AdventureBackpacks`** | `Humanoid.UpdateEquipmentStatusEffects` | Class 'Humanoid' was modified elsewhere, but method 'UpdateEquipmentStatusEffects' is UNTOUCHED. | `Humanoid.cs:17` |
-| 🛡️ `VERIFIED SAFE` | **`AdventureBackpacks`** | `InventoryGui.Update` | Class 'InventoryGui' was modified elsewhere, but method 'Update' is UNTOUCHED. | `InventoryGui.cs:272` |
-| 🛡️ `VERIFIED SAFE` | **`AdventureBackpacks`** | `InventoryGui.SetupRequirement` | Class 'InventoryGui' was modified elsewhere, but method 'SetupRequirement' is UNTOUCHED. | `InventoryGui.cs:502` |
-| 🛡️ `VERIFIED SAFE` | **`AdventureBackpacks`** | `Player.HaveRequirementItems` | Class 'Player' was modified elsewhere, but method 'HaveRequirementItems' is UNTOUCHED. | `Player.cs:93` |
-| 🛡️ `VERIFIED SAFE` | **`AdventureBackpacks`** | `Player.ConsumeResources` | Class 'Player' was modified elsewhere, but method 'ConsumeResources' is UNTOUCHED. | `Player.cs:156` |
-| 🟢 `SAFE` | **`NoFogBruh`** | `PostProcessingBehaviour.OnPreRender` | Class 'PostProcessingBehaviour' and method 'OnPreRender' are 100% UNCHANGED. | `DisableFogComponent.cs:297` |
-| 🛡️ `VERIFIED SAFE` | **`Vapok.Common`** | `Inventory.FindFreeStackSpace` | Class 'Inventory' was modified elsewhere, but method 'FindFreeStackSpace' is UNTOUCHED. | `CustomDataManager.cs:680` |
-| 🚨 `CRITICAL` | **`Vapok.Common`** | `Inventory.FindFreeStackItem` | Vanilla method 'Inventory.FindFreeStackItem' was MODIFIED! IL opcodes/offsets likely altered. | `CustomDataManager.cs:681` |
-| 🟢 `SAFE` | **`Vapok.Common`** | `ItemDrop.AutoStackItems` | Class 'ItemDrop' and method 'AutoStackItems' are 100% UNCHANGED. | `CustomDataManager.cs:683` |
-| 🛡️ `VERIFIED SAFE` | **`Vapok.Common`** | `InventoryGui.DoCrafting` | Class 'InventoryGui' was modified elsewhere, but method 'DoCrafting' is UNTOUCHED. | `CustomDataManager.cs:685` |
-| 🟢 `SAFE` | **`Vapok.Common`** | `ItemDrop.Awake` | Class 'ItemDrop' and method 'Awake' are 100% UNCHANGED. | `CustomDataManager.cs:695` |
-| 🛡️ `VERIFIED SAFE` | **`Vapok.Common`** | `InventoryGui.UpdateRecipe` | Class 'InventoryGui' was modified elsewhere, but method 'UpdateRecipe' is UNTOUCHED. | `ItemManager.cs:1848` |
-| 🛡️ `VERIFIED SAFE` | **`Vapok.Common`** | `InventoryGui.SetupRequirementList` | Class 'InventoryGui' was modified elsewhere, but method 'SetupRequirementList' is UNTOUCHED. | `ItemManager.cs:1849` |
-| 🟢 `SAFE` | **`Vapok.Common`** | `PieceTable.UpdateAvailable` | Class 'PieceTable' and method 'UpdateAvailable' are 100% UNCHANGED. | `PieceManager.cs:1096` |
-| 🟢 `SAFE` | **`XPortalNetworks`** | `TeleportWorld.UpdatePortal` | Class 'TeleportWorld' and method 'UpdatePortal' are 100% UNCHANGED. | `TeleportWorld.cs:87` |
+<table>
+  <thead>
+    <tr>
+      <th align="center">Status</th>
+      <th align="left">Mod</th>
+      <th align="left">Hook Target Class &amp; Method</th>
+      <th align="left">Source Location</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center" rowspan="2">🟢 <code>SAFE</code></td>
+      <td><strong><code>AdventureBackpacks</code></strong></td>
+      <td><code>ItemData.GetWeight</code></td>
+      <td><code>ItemDrop.cs:14</code></td>
+    </tr>
+    <tr>
+      <td colspan="3"><em>Class 'ItemData' and method 'GetWeight' are 100% UNCHANGED.</em></td>
+    </tr>
+    <tr>
+      <td align="center" rowspan="2">🟢 <code>SAFE</code></td>
+      <td><strong><code>AdventureBackpacks</code></strong></td>
+      <td><code>Container.Awake</code></td>
+      <td><code>Container.cs:68</code></td>
+    </tr>
+    <tr>
+      <td colspan="3"><em>Class 'Container' and method 'Awake' are 100% UNCHANGED.</em></td>
+    </tr>
+    <tr>
+      <td align="center" rowspan="2">🛡️ <code>VERIFIED SAFE</code></td>
+      <td><strong><code>AdventureBackpacks</code></strong></td>
+      <td><code>Humanoid.UpdateEquipmentStatusEffects</code></td>
+      <td><code>Humanoid.cs:17</code></td>
+    </tr>
+    <tr>
+      <td colspan="3"><em>Class 'Humanoid' was modified elsewhere, but method 'UpdateEquipmentStatusEffects' is UNTOUCHED.</em></td>
+    </tr>
+    <tr>
+      <td align="center" rowspan="2">🛡️ <code>VERIFIED SAFE</code></td>
+      <td><strong><code>AdventureBackpacks</code></strong></td>
+      <td><code>InventoryGui.Update</code></td>
+      <td><code>InventoryGui.cs:272</code></td>
+    </tr>
+    <tr>
+      <td colspan="3"><em>Class 'InventoryGui' was modified elsewhere, but method 'Update' is UNTOUCHED.</em></td>
+    </tr>
+    <tr>
+      <td align="center" rowspan="2">🛡️ <code>VERIFIED SAFE</code></td>
+      <td><strong><code>AdventureBackpacks</code></strong></td>
+      <td><code>InventoryGui.SetupRequirement</code></td>
+      <td><code>InventoryGui.cs:502</code></td>
+    </tr>
+    <tr>
+      <td colspan="3"><em>Class 'InventoryGui' was modified elsewhere, but method 'SetupRequirement' is UNTOUCHED.</em></td>
+    </tr>
+    <tr>
+      <td align="center" rowspan="2">🛡️ <code>VERIFIED SAFE</code></td>
+      <td><strong><code>AdventureBackpacks</code></strong></td>
+      <td><code>Player.HaveRequirementItems</code></td>
+      <td><code>Player.cs:93</code></td>
+    </tr>
+    <tr>
+      <td colspan="3"><em>Class 'Player' was modified elsewhere, but method 'HaveRequirementItems' is UNTOUCHED.</em></td>
+    </tr>
+    <tr>
+      <td align="center" rowspan="2">🛡️ <code>VERIFIED SAFE</code></td>
+      <td><strong><code>AdventureBackpacks</code></strong></td>
+      <td><code>Player.ConsumeResources</code></td>
+      <td><code>Player.cs:156</code></td>
+    </tr>
+    <tr>
+      <td colspan="3"><em>Class 'Player' was modified elsewhere, but method 'ConsumeResources' is UNTOUCHED.</em></td>
+    </tr>
+    <tr>
+      <td align="center" rowspan="2">🟢 <code>SAFE</code></td>
+      <td><strong><code>NoFogBruh</code></strong></td>
+      <td><code>PostProcessingBehaviour.OnPreRender</code></td>
+      <td><code>DisableFogComponent.cs:297</code></td>
+    </tr>
+    <tr>
+      <td colspan="3"><em>Class 'PostProcessingBehaviour' and method 'OnPreRender' are 100% UNCHANGED.</em></td>
+    </tr>
+    <tr>
+      <td align="center" rowspan="2">🛡️ <code>VERIFIED SAFE</code></td>
+      <td><strong><code>Vapok.Common</code></strong></td>
+      <td><code>Inventory.FindFreeStackSpace</code></td>
+      <td><code>CustomDataManager.cs:680</code></td>
+    </tr>
+    <tr>
+      <td colspan="3"><em>Class 'Inventory' was modified elsewhere, but method 'FindFreeStackSpace' is UNTOUCHED.</em></td>
+    </tr>
+    <tr>
+      <td align="center" rowspan="2">🚨 <code>CRITICAL</code></td>
+      <td><strong><code>Vapok.Common</code></strong></td>
+      <td><code>Inventory.FindFreeStackItem</code></td>
+      <td><code>CustomDataManager.cs:681</code></td>
+    </tr>
+    <tr>
+      <td colspan="3"><em>Vanilla method 'Inventory.FindFreeStackItem' was MODIFIED! IL opcodes/offsets likely altered.</em></td>
+    </tr>
+    <tr>
+      <td align="center" rowspan="2">🟢 <code>SAFE</code></td>
+      <td><strong><code>Vapok.Common</code></strong></td>
+      <td><code>ItemDrop.AutoStackItems</code></td>
+      <td><code>CustomDataManager.cs:683</code></td>
+    </tr>
+    <tr>
+      <td colspan="3"><em>Class 'ItemDrop' and method 'AutoStackItems' are 100% UNCHANGED.</em></td>
+    </tr>
+    <tr>
+      <td align="center" rowspan="2">🛡️ <code>VERIFIED SAFE</code></td>
+      <td><strong><code>Vapok.Common</code></strong></td>
+      <td><code>InventoryGui.DoCrafting</code></td>
+      <td><code>CustomDataManager.cs:685</code></td>
+    </tr>
+    <tr>
+      <td colspan="3"><em>Class 'InventoryGui' was modified elsewhere, but method 'DoCrafting' is UNTOUCHED.</em></td>
+    </tr>
+    <tr>
+      <td align="center" rowspan="2">🟢 <code>SAFE</code></td>
+      <td><strong><code>Vapok.Common</code></strong></td>
+      <td><code>ItemDrop.Awake</code></td>
+      <td><code>CustomDataManager.cs:695</code></td>
+    </tr>
+    <tr>
+      <td colspan="3"><em>Class 'ItemDrop' and method 'Awake' are 100% UNCHANGED.</em></td>
+    </tr>
+    <tr>
+      <td align="center" rowspan="2">🛡️ <code>VERIFIED SAFE</code></td>
+      <td><strong><code>Vapok.Common</code></strong></td>
+      <td><code>InventoryGui.UpdateRecipe</code></td>
+      <td><code>ItemManager.cs:1848</code></td>
+    </tr>
+    <tr>
+      <td colspan="3"><em>Class 'InventoryGui' was modified elsewhere, but method 'UpdateRecipe' is UNTOUCHED.</em></td>
+    </tr>
+    <tr>
+      <td align="center" rowspan="2">🛡️ <code>VERIFIED SAFE</code></td>
+      <td><strong><code>Vapok.Common</code></strong></td>
+      <td><code>InventoryGui.SetupRequirementList</code></td>
+      <td><code>ItemManager.cs:1849</code></td>
+    </tr>
+    <tr>
+      <td colspan="3"><em>Class 'InventoryGui' was modified elsewhere, but method 'SetupRequirementList' is UNTOUCHED.</em></td>
+    </tr>
+    <tr>
+      <td align="center" rowspan="2">🟢 <code>SAFE</code></td>
+      <td><strong><code>Vapok.Common</code></strong></td>
+      <td><code>PieceTable.UpdateAvailable</code></td>
+      <td><code>PieceManager.cs:1096</code></td>
+    </tr>
+    <tr>
+      <td colspan="3"><em>Class 'PieceTable' and method 'UpdateAvailable' are 100% UNCHANGED.</em></td>
+    </tr>
+    <tr>
+      <td align="center" rowspan="2">🟢 <code>SAFE</code></td>
+      <td><strong><code>XPortalNetworks</code></strong></td>
+      <td><code>TeleportWorld.UpdatePortal</code></td>
+      <td><code>TeleportWorld.cs:87</code></td>
+    </tr>
+    <tr>
+      <td colspan="3"><em>Class 'TeleportWorld' and method 'UpdatePortal' are 100% UNCHANGED.</em></td>
+    </tr>
+  </tbody>
+</table>
 
 ## 🎯 Mod Impact Assessment
 
