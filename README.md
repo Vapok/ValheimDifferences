@@ -10,7 +10,7 @@ Maintained by **[Vapok](https://github.com/Vapok)**.
 
 | Version Range | Assemblies Modified | Game Classes Changed | Transpiler Safety | Full Report |
 | :---: | :---: | :---: | :---: | :---: |
-| **`1.0.12` $\rightarrow$ `1.0.14`** | `2` | `32` modified | `16` Safe / `🚨 1` Review | [Read Diff Report](Valheim_Diff_1.0.12_to_1.0.14.md) |
+| **`1.0.12` $\rightarrow$ `1.0.14`** | `2` | `32` modified | `16` Safe / `🚨 1` Review | [Read Diff Report](reports/Valheim_Diff_1.0.12_to_1.0.14.md) |
 
 ---
 
