@@ -83,10 +83,10 @@ Scans all workspace mod projects for Harmony patches, transpilers, and reference
 | :---: | :--- | :--- | :---: |
 | 🟡 `MOD` | `ZInput.cs` | `private Vector2 ApplyDeadzoneVector(Vector2 value)`<br>`private Vector2 ApplyDeadzoneVector(Vector2 value, bool smooth)`<br>`private float ApplyDeadzoneFloat(float value)`<br>`private float ApplyDeadzoneFloat(float value, bool smooth)`<br>`private void ApplyDeadzoneToMagnitude(ref float magnitude)`<br>*...and 15 more* | [View Diff](#assembly_utils_zinput_cs) |
 
-### Detailed Class Diffs
+### Detailed Diffs: `assembly_utils.dll`
 
-<details>
-<summary><b id="assembly_utils_zinput_cs"><code>ZInput.cs</code></b> (MODIFIED <code>+97/-53</code>)</summary>
+#### 📄 `ZInput.cs` (🟡 MODIFIED `+97/-53`) <a id="assembly_utils_zinput_cs"></a>
+*([⬆ Back to `assembly_utils.dll` summary](#assembly_utils))*
 
 **Identified Changes / Methods:**
 - `private Vector2 ApplyDeadzoneVector(Vector2 value)`
@@ -393,7 +393,6 @@ Scans all workspace mod projects for Harmony patches, transpilers, and reference
  			AddButton("JoyRun", s_gamepadInputPathMap[GamepadInput.StickLButton]);
  			AddButton("JoyCrouch", s_gamepadInputPathMap[flag ? GamepadInput.BumperL : GamepadInput.StickRButton]);
 ```
-</details>
 
 ---
 
@@ -435,10 +434,10 @@ Scans all workspace mod projects for Harmony patches, transpilers, and reference
 | 🟡 `MOD` | `Version.cs` | *Class level change* | [View Diff](#assembly_valheim_version_cs) |
 | 🟡 `MOD` | `ZNet.cs` | *Class level change* | [View Diff](#assembly_valheim_znet_cs) |
 
-### Detailed Class Diffs
+### Detailed Diffs: `assembly_valheim.dll`
 
-<details>
-<summary><b id="assembly_valheim_achievements_cs"><code>Achievements.cs</code></b> (MODIFIED <code>+1/-1</code>)</summary>
+#### 📄 `Achievements.cs` (🟡 MODIFIED `+1/-1`) <a id="assembly_valheim_achievements_cs"></a>
+*([⬆ Back to `assembly_valheim.dll` summary](#assembly_valheim))*
 
 ```diff
 --- a/Achievements.cs
@@ -453,10 +452,9 @@ Scans all workspace mod projects for Harmony patches, transpilers, and reference
  				if (achievement.CheckUnlocked())
  				{
 ```
-</details>
 
-<details>
-<summary><b id="assembly_valheim_altbiomeworlddata_cs"><code>AltBiomeWorldData.cs</code></b> (MODIFIED <code>+2/-6</code>)</summary>
+#### 📄 `AltBiomeWorldData.cs` (🟡 MODIFIED `+2/-6`) <a id="assembly_valheim_altbiomeworlddata_cs"></a>
+*([⬆ Back to `assembly_valheim.dll` summary](#assembly_valheim))*
 
 ```diff
 --- a/AltBiomeWorldData.cs
@@ -477,10 +475,9 @@ Scans all workspace mod projects for Harmony patches, transpilers, and reference
  	}
  
 ```
-</details>
 
-<details>
-<summary><b id="assembly_valheim_attack_cs"><code>Attack.cs</code></b> (MODIFIED <code>+18/-4</code>)</summary>
+#### 📄 `Attack.cs` (🟡 MODIFIED `+18/-4`) <a id="assembly_valheim_attack_cs"></a>
+*([⬆ Back to `assembly_valheim.dll` summary](#assembly_valheim))*
 
 ```diff
 --- a/Attack.cs
@@ -515,10 +512,9 @@ Scans all workspace mod projects for Harmony patches, transpilers, and reference
  		weapon.m_lastAttackTime = Time.time;
  		m_animEvent.ResetChain();
 ```
-</details>
 
-<details>
-<summary><b id="assembly_valheim_character_cs"><code>Character.cs</code></b> (MODIFIED <code>+34/-30</code>)</summary>
+#### 📄 `Character.cs` (🟡 MODIFIED `+34/-30`) <a id="assembly_valheim_character_cs"></a>
+*([⬆ Back to `assembly_valheim.dll` summary](#assembly_valheim))*
 
 ```diff
 --- a/Character.cs
@@ -631,10 +627,9 @@ Scans all workspace mod projects for Harmony patches, transpilers, and reference
  		float health = GetHealth();
  		if (health > 0f)
 ```
-</details>
 
-<details>
-<summary><b id="assembly_valheim_cinematicsmanager_cs"><code>CinematicsManager.cs</code></b> (MODIFIED <code>+2/-0</code>)</summary>
+#### 📄 `CinematicsManager.cs` (🟡 MODIFIED `+2/-0`) <a id="assembly_valheim_cinematicsmanager_cs"></a>
+*([⬆ Back to `assembly_valheim.dll` summary](#assembly_valheim))*
 
 ```diff
 --- a/CinematicsManager.cs
@@ -649,10 +644,9 @@ Scans all workspace mod projects for Harmony patches, transpilers, and reference
  
  	private static bool m_playing;
 ```
-</details>
 
-<details>
-<summary><b id="assembly_valheim_fejdstartup_cs"><code>FejdStartup.cs</code></b> (MODIFIED <code>+12/-7</code>)</summary>
+#### 📄 `FejdStartup.cs` (🟡 MODIFIED `+12/-7`) <a id="assembly_valheim_fejdstartup_cs"></a>
+*([⬆ Back to `assembly_valheim.dll` summary](#assembly_valheim))*
 
 **Identified Changes / Methods:**
 - `private IEnumerator PlayIntroCinematic()`
@@ -702,10 +696,9 @@ Scans all workspace mod projects for Harmony patches, transpilers, and reference
  					video.m_unlocked = true;
  				}
 ```
-</details>
 
-<details>
-<summary><b id="assembly_valheim_gamecamera_cs"><code>GameCamera.cs</code></b> (MODIFIED <code>+4/-2</code>)</summary>
+#### 📄 `GameCamera.cs` (🟡 MODIFIED `+4/-2`) <a id="assembly_valheim_gamecamera_cs"></a>
+*([⬆ Back to `assembly_valheim.dll` summary](#assembly_valheim))*
 
 ```diff
 --- a/GameCamera.cs
@@ -724,10 +717,9 @@ Scans all workspace mod projects for Harmony patches, transpilers, and reference
  		{
  			m_freeFlySavedVel = vector;
 ```
-</details>
 
-<details>
-<summary><b id="assembly_valheim_graphicssettingsmanager_cs"><code>GraphicsSettingsManager.cs</code></b> (MODIFIED <code>+12/-4</code>)</summary>
+#### 📄 `GraphicsSettingsManager.cs` (🟡 MODIFIED `+12/-4`) <a id="assembly_valheim_graphicssettingsmanager_cs"></a>
+*([⬆ Back to `assembly_valheim.dll` summary](#assembly_valheim))*
 
 **Identified Changes / Methods:**
 - `private static void ApplyShaderKeywords(in GraphicsSettingsState settings)`
@@ -795,10 +787,9 @@ Scans all workspace mod projects for Harmony patches, transpilers, and reference
  	}
  }
 ```
-</details>
 
-<details>
-<summary><b id="assembly_valheim_grapplingpoint_cs"><code>GrapplingPoint.cs</code></b> (MODIFIED <code>+17/-8</code>)</summary>
+#### 📄 `GrapplingPoint.cs` (🟡 MODIFIED `+17/-8`) <a id="assembly_valheim_grapplingpoint_cs"></a>
+*([⬆ Back to `assembly_valheim.dll` summary](#assembly_valheim))*
 
 ```diff
 --- a/GrapplingPoint.cs
@@ -860,10 +851,9 @@ Scans all workspace mod projects for Harmony patches, transpilers, and reference
  
  	public void Break(bool early)
 ```
-</details>
 
-<details>
-<summary><b id="assembly_valheim_humanoid_cs"><code>Humanoid.cs</code></b> (MODIFIED <code>+1/-1</code>)</summary>
+#### 📄 `Humanoid.cs` (🟡 MODIFIED `+1/-1`) <a id="assembly_valheim_humanoid_cs"></a>
+*([⬆ Back to `assembly_valheim.dll` summary](#assembly_valheim))*
 
 ```diff
 --- a/Humanoid.cs
@@ -878,10 +868,9 @@ Scans all workspace mod projects for Harmony patches, transpilers, and reference
  					EquipItem(item);
  					return;
 ```
-</details>
 
-<details>
-<summary><b id="assembly_valheim_inventory_cs"><code>Inventory.cs</code></b> (MODIFIED <code>+11/-15</code>)</summary>
+#### 📄 `Inventory.cs` (🟡 MODIFIED `+11/-15`) <a id="assembly_valheim_inventory_cs"></a>
+*([⬆ Back to `assembly_valheim.dll` summary](#assembly_valheim))*
 
 ```diff
 --- a/Inventory.cs
@@ -965,10 +954,9 @@ Scans all workspace mod projects for Harmony patches, transpilers, and reference
  				return item;
  			}
 ```
-</details>
 
-<details>
-<summary><b id="assembly_valheim_inventorygrid_cs"><code>InventoryGrid.cs</code></b> (MODIFIED <code>+1/-1</code>)</summary>
+#### 📄 `InventoryGrid.cs` (🟡 MODIFIED `+1/-1`) <a id="assembly_valheim_inventorygrid_cs"></a>
+*([⬆ Back to `assembly_valheim.dll` summary](#assembly_valheim))*
 
 ```diff
 --- a/InventoryGrid.cs
@@ -983,10 +971,9 @@ Scans all workspace mod projects for Harmony patches, transpilers, and reference
  			fromInventory.RemoveItem(item);
  			fromInventory.MoveItemToThis(m_inventory, itemAt, itemAt.m_stack, item.m_gridPos.x, item.m_gridPos.y);
 ```
-</details>
 
-<details>
-<summary><b id="assembly_valheim_inventorygui_cs"><code>InventoryGui.cs</code></b> (MODIFIED <code>+3/-3</code>)</summary>
+#### 📄 `InventoryGui.cs` (🟡 MODIFIED `+3/-3`) <a id="assembly_valheim_inventorygui_cs"></a>
+*([⬆ Back to `assembly_valheim.dll` summary](#assembly_valheim))*
 
 ```diff
 --- a/InventoryGui.cs
@@ -1005,10 +992,9 @@ Scans all workspace mod projects for Harmony patches, transpilers, and reference
  		return false;
  	}
 ```
-</details>
 
-<details>
-<summary><b id="assembly_valheim_leviathan_cs"><code>Leviathan.cs</code></b> (MODIFIED <code>+2/-2</code>)</summary>
+#### 📄 `Leviathan.cs` (🟡 MODIFIED `+2/-2`) <a id="assembly_valheim_leviathan_cs"></a>
+*([⬆ Back to `assembly_valheim.dll` summary](#assembly_valheim))*
 
 ```diff
 --- a/Leviathan.cs
@@ -1027,10 +1013,9 @@ Scans all workspace mod projects for Harmony patches, transpilers, and reference
  				m_nview.Destroy();
  			}
 ```
-</details>
 
-<details>
-<summary><b id="assembly_valheim_minimap_cs"><code>Minimap.cs</code></b> (MODIFIED <code>+1/-1</code>)</summary>
+#### 📄 `Minimap.cs` (🟡 MODIFIED `+1/-1`) <a id="assembly_valheim_minimap_cs"></a>
+*([⬆ Back to `assembly_valheim.dll` summary](#assembly_valheim))*
 
 ```diff
 --- a/Minimap.cs
@@ -1045,10 +1030,9 @@ Scans all workspace mod projects for Harmony patches, transpilers, and reference
  			}
  			if (m_dragView)
 ```
-</details>
 
-<details>
-<summary><b id="assembly_valheim_piece_cs"><code>Piece.cs</code></b> (MODIFIED <code>+12/-15</code>)</summary>
+#### 📄 `Piece.cs` (🟡 MODIFIED `+12/-15`) <a id="assembly_valheim_piece_cs"></a>
+*([⬆ Back to `assembly_valheim.dll` summary](#assembly_valheim))*
 
 **Identified Changes / Methods:**
 - `public static void CheckLenientBuildAchUnlocked(Achievement buildAchievement, bool afterLocalPlayerExists, bool useTagStats)`
@@ -1109,10 +1093,9 @@ Scans all workspace mod projects for Harmony patches, transpilers, and reference
  	}
  
 ```
-</details>
 
-<details>
-<summary><b id="assembly_valheim_player_cs"><code>Player.cs</code></b> (MODIFIED <code>+58/-54</code>)</summary>
+#### 📄 `Player.cs` (🟡 MODIFIED `+58/-54`) <a id="assembly_valheim_player_cs"></a>
+*([⬆ Back to `assembly_valheim.dll` summary](#assembly_valheim))*
 
 ```diff
 --- a/Player.cs
@@ -1323,10 +1306,9 @@ Scans all workspace mod projects for Harmony patches, transpilers, and reference
  				Vector3 dodgeDir2 = m_moveDir;
  				if (dodgeDir2.magnitude < 0.1f)
 ```
-</details>
 
-<details>
-<summary><b id="assembly_valheim_playercontroller_cs"><code>PlayerController.cs</code></b> (MODIFIED <code>+16/-13</code>)</summary>
+#### 📄 `PlayerController.cs` (🟡 MODIFIED `+16/-13`) <a id="assembly_valheim_playercontroller_cs"></a>
+*([⬆ Back to `assembly_valheim.dll` summary](#assembly_valheim))*
 
 ```diff
 --- a/PlayerController.cs
@@ -1396,10 +1378,9 @@ Scans all workspace mod projects for Harmony patches, transpilers, and reference
  		if (takeInputDelay > 0f)
  		{
 ```
-</details>
 
-<details>
-<summary><b id="assembly_valheim_presentmanager_cs"><code>PresentManager.cs</code></b> (MODIFIED <code>+7/-4</code>)</summary>
+#### 📄 `PresentManager.cs` (🟡 MODIFIED `+7/-4`) <a id="assembly_valheim_presentmanager_cs"></a>
+*([⬆ Back to `assembly_valheim.dll` summary](#assembly_valheim))*
 
 **Identified Changes / Methods:**
 - `public void RequestTargetFrameRate(int targetFrameRate, int targetRefreshRate)`
@@ -1441,10 +1422,9 @@ Scans all workspace mod projects for Harmony patches, transpilers, and reference
  			{
  				m_currentDisplayRefreshRate = presentRefreshRate;
 ```
-</details>
 
-<details>
-<summary><b id="assembly_valheim_projectile_cs"><code>Projectile.cs</code></b> (MODIFIED <code>+5/-2</code>)</summary>
+#### 📄 `Projectile.cs` (🟡 MODIFIED `+5/-2`) <a id="assembly_valheim_projectile_cs"></a>
+*([⬆ Back to `assembly_valheim.dll` summary](#assembly_valheim))*
 
 ```diff
 --- a/Projectile.cs
@@ -1469,10 +1449,9 @@ Scans all workspace mod projects for Harmony patches, transpilers, and reference
  				m_nview.InvokeRPC("RPC_Attach", componentInParent.GetZDO().m_uid);
  			}
 ```
-</details>
 
-<details>
-<summary><b id="assembly_valheim_reportuser_cs"><code>ReportUser.cs</code></b> (MODIFIED <code>+19/-4</code>)</summary>
+#### 📄 `ReportUser.cs` (🟡 MODIFIED `+19/-4`) <a id="assembly_valheim_reportuser_cs"></a>
+*([⬆ Back to `assembly_valheim.dll` summary](#assembly_valheim))*
 
 ```diff
 --- a/ReportUser.cs
@@ -1514,10 +1493,9 @@ Scans all workspace mod projects for Harmony patches, transpilers, and reference
  		else
  		{
 ```
-</details>
 
-<details>
-<summary><b id="assembly_valheim_seman_cs"><code>SEMan.cs</code></b> (MODIFIED <code>+4/-0</code>)</summary>
+#### 📄 `SEMan.cs` (🟡 MODIFIED `+4/-0`) <a id="assembly_valheim_seman_cs"></a>
+*([⬆ Back to `assembly_valheim.dll` summary](#assembly_valheim))*
 
 ```diff
 --- a/SEMan.cs
@@ -1534,10 +1512,9 @@ Scans all workspace mod projects for Harmony patches, transpilers, and reference
  			return null;
  		}
 ```
-</details>
 
-<details>
-<summary><b id="assembly_valheim_staticrotation_cs"><code>StaticRotation.cs</code></b> (MODIFIED <code>+8/-4</code>)</summary>
+#### 📄 `StaticRotation.cs` (🟡 MODIFIED `+8/-4`) <a id="assembly_valheim_staticrotation_cs"></a>
+*([⬆ Back to `assembly_valheim.dll` summary](#assembly_valheim))*
 
 ```diff
 --- a/StaticRotation.cs
@@ -1564,10 +1541,9 @@ Scans all workspace mod projects for Harmony patches, transpilers, and reference
  			}
  		}
 ```
-</details>
 
-<details>
-<summary><b id="assembly_valheim_terminal_cs"><code>Terminal.cs</code></b> (MODIFIED <code>+13/-1</code>)</summary>
+#### 📄 `Terminal.cs` (🟡 MODIFIED `+13/-1`) <a id="assembly_valheim_terminal_cs"></a>
+*([⬆ Back to `assembly_valheim.dll` summary](#assembly_valheim))*
 
 ```diff
 --- a/Terminal.cs
@@ -1601,10 +1577,9 @@ Scans all workspace mod projects for Harmony patches, transpilers, and reference
  		{
  			GameObject obj = UnityEngine.Object.Instantiate(Player.m_localPlayer.m_tombstone, Player.m_localPlayer.GetCenterPoint(), Player.m_localPlayer.transform.rotation);
 ```
-</details>
 
-<details>
-<summary><b id="assembly_valheim_terraincomp_cs"><code>TerrainComp.cs</code></b> (MODIFIED <code>+20/-13</code>)</summary>
+#### 📄 `TerrainComp.cs` (🟡 MODIFIED `+20/-13`) <a id="assembly_valheim_terraincomp_cs"></a>
+*([⬆ Back to `assembly_valheim.dll` summary](#assembly_valheim))*
 
 **Identified Changes / Methods:**
 - `private TerrainComp GetNeighbor(Vector3 worldPos, int x, int y, float radius)`
@@ -1691,10 +1666,9 @@ Scans all workspace mod projects for Harmony patches, transpilers, and reference
  		}
  		return m_neighborGrid[x, y];
 ```
-</details>
 
-<details>
-<summary><b id="assembly_valheim_valheim_settingsgui_accessibilitysettings_cs"><code>Valheim.SettingsGui/AccessibilitySettings.cs</code></b> (MODIFIED <code>+13/-4</code>)</summary>
+#### 📄 `Valheim.SettingsGui/AccessibilitySettings.cs` (🟡 MODIFIED `+13/-4`) <a id="assembly_valheim_valheim_settingsgui_accessibilitysettings_cs"></a>
+*([⬆ Back to `assembly_valheim.dll` summary](#assembly_valheim))*
 
 ```diff
 --- a/Valheim.SettingsGui/AccessibilitySettings.cs
@@ -1745,10 +1719,9 @@ Scans all workspace mod projects for Harmony patches, transpilers, and reference
  	}
  
 ```
-</details>
 
-<details>
-<summary><b id="assembly_valheim_valheim_settingsgui_gamepadsettings_cs"><code>Valheim.SettingsGui/GamepadSettings.cs</code></b> (MODIFIED <code>+3/-3</code>)</summary>
+#### 📄 `Valheim.SettingsGui/GamepadSettings.cs` (🟡 MODIFIED `+3/-3`) <a id="assembly_valheim_valheim_settingsgui_gamepadsettings_cs"></a>
+*([⬆ Back to `assembly_valheim.dll` summary](#assembly_valheim))*
 
 ```diff
 --- a/Valheim.SettingsGui/GamepadSettings.cs
@@ -1767,10 +1740,9 @@ Scans all workspace mod projects for Harmony patches, transpilers, and reference
  	private List<string> m_glyphOptions = new List<string> { "Xbox", "Playstation" };
  
 ```
-</details>
 
-<details>
-<summary><b id="assembly_valheim_valheim_settingsgui_gameplaysettings_cs"><code>Valheim.SettingsGui/GameplaySettings.cs</code></b> (MODIFIED <code>+5/-1</code>)</summary>
+#### 📄 `Valheim.SettingsGui/GameplaySettings.cs` (🟡 MODIFIED `+5/-1`) <a id="assembly_valheim_valheim_settingsgui_gameplaysettings_cs"></a>
+*([⬆ Back to `assembly_valheim.dll` summary](#assembly_valheim))*
 
 ```diff
 --- a/Valheim.SettingsGui/GameplaySettings.cs
@@ -1810,10 +1782,9 @@ Scans all workspace mod projects for Harmony patches, transpilers, and reference
  	}
  
 ```
-</details>
 
-<details>
-<summary><b id="assembly_valheim_valheim_settingsgui_keyboardmousesettings_cs"><code>Valheim.SettingsGui/KeyboardMouseSettings.cs</code></b> (MODIFIED <code>+6/-25</code>)</summary>
+#### 📄 `Valheim.SettingsGui/KeyboardMouseSettings.cs` (🟡 MODIFIED `+6/-25`) <a id="assembly_valheim_valheim_settingsgui_keyboardmousesettings_cs"></a>
+*([⬆ Back to `assembly_valheim.dll` summary](#assembly_valheim))*
 
 **Identified Changes / Methods:**
 - `public void SetConsoleEnabled(bool enabled)`
@@ -1881,10 +1852,9 @@ Scans all workspace mod projects for Harmony patches, transpilers, and reference
  	}
  
 ```
-</details>
 
-<details>
-<summary><b id="assembly_valheim_version_cs"><code>Version.cs</code></b> (MODIFIED <code>+1/-1</code>)</summary>
+#### 📄 `Version.cs` (🟡 MODIFIED `+1/-1`) <a id="assembly_valheim_version_cs"></a>
+*([⬆ Back to `assembly_valheim.dll` summary](#assembly_valheim))*
 
 ```diff
 --- a/Version.cs
@@ -1899,10 +1869,9 @@ Scans all workspace mod projects for Harmony patches, transpilers, and reference
  	public static string GetVersionString(bool includeMercurialHash = false)
  	{
 ```
-</details>
 
-<details>
-<summary><b id="assembly_valheim_znet_cs"><code>ZNet.cs</code></b> (MODIFIED <code>+4/-5</code>)</summary>
+#### 📄 `ZNet.cs` (🟡 MODIFIED `+4/-5`) <a id="assembly_valheim_znet_cs"></a>
+*([⬆ Back to `assembly_valheim.dll` summary](#assembly_valheim))*
 
 ```diff
 --- a/ZNet.cs
@@ -1924,6 +1893,5 @@ Scans all workspace mod projects for Harmony patches, transpilers, and reference
  
  	private void RPC_Save(ZRpc rpc)
 ```
-</details>
 
 ---
