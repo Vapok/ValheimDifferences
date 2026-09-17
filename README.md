@@ -8,9 +8,9 @@ Maintained by **[Vapok](https://github.com/Vapok)**.
 
 ## 📚 Version Comparison Archive
 
-| Version Range | Assemblies Modified | Game Classes Changed | Transpiler Safety | Full Report |
+| Version | Assemblies Modified | Game Classes Changed | Transpiler Safety | Full Report |
 | :---: | :---: | :---: | :---: | :---: |
-| **`1.0.12` $\rightarrow$ `1.0.14`** | `2` | `32` modified | `16` Safe / `⚠️ 1` Caution | [Read Diff Report](reports/1.0.14/Valheim_Diff.md) |
+| **`1.0.14`** | `2` | `32` modified | `16` Safe / `⚠️ 1` Caution | [Read Diff Report](reports/1.0.14/Valheim_Diff.md) |
 
 ---
 
