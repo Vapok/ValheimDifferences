@@ -225,9 +225,9 @@ Scans all workspace mod projects for Harmony patches, transpilers, and reference
 
 **Changes Summary:** `1` modified, `0` added, `0` deleted (`+97` / `-53` lines)
 
-| Status | Class / File | Changed Scope / Signatures | Diff Link |
-| :---: | :--- | :--- | :---: |
-| 🟡 `MOD` | `ZInput.cs` | `private Vector2 ApplyDeadzoneVector(Vector2 value)`<br>`private Vector2 ApplyDeadzoneVector(Vector2 value, bool smooth)`<br>`private float ApplyDeadzoneFloat(float value)`<br>`private float ApplyDeadzoneFloat(float value, bool smooth)`<br>`private void ApplyDeadzoneToMagnitude(ref float magnitude)`<br>*...and 15 more* | [📄 View `ZInput.md`](Changes/assembly_utils/ZInput.md) |
+| Status | Class / File | Changed Scope / Signatures |
+| :---: | :--- | :--- |
+| 🟡 `MOD` | [`ZInput.cs`](Changes/assembly_utils/ZInput.md) | `private Vector2 ApplyDeadzoneVector(Vector2 value)`<br>`private Vector2 ApplyDeadzoneVector(Vector2 value, bool smooth)`<br>`private float ApplyDeadzoneFloat(float value)`<br>`private float ApplyDeadzoneFloat(float value, bool smooth)`<br>`private void ApplyDeadzoneToMagnitude(ref float magnitude)`<br>*...and 15 more* |
 
 ---
 
@@ -235,38 +235,38 @@ Scans all workspace mod projects for Harmony patches, transpilers, and reference
 
 **Changes Summary:** `31` modified, `0` added, `0` deleted (`+315` / `-234` lines)
 
-| Status | Class / File | Changed Scope / Signatures | Diff Link |
-| :---: | :--- | :--- | :---: |
-| 🟡 `MOD` | `Achievements.cs` | *Class level change* | [📄 View `Achievements.md`](Changes/assembly_valheim/Achievements.md) |
-| 🟡 `MOD` | `AltBiomeWorldData.cs` | *Class level change* | [📄 View `AltBiomeWorldData.md`](Changes/assembly_valheim/AltBiomeWorldData.md) |
-| 🟡 `MOD` | `Attack.cs` | *Class level change* | [📄 View `Attack.md`](Changes/assembly_valheim/Attack.md) |
-| 🟡 `MOD` | `Character.cs` | *Class level change* | [📄 View `Character.md`](Changes/assembly_valheim/Character.md) |
-| 🟡 `MOD` | `CinematicsManager.cs` | *Class level change* | [📄 View `CinematicsManager.md`](Changes/assembly_valheim/CinematicsManager.md) |
-| 🟡 `MOD` | `FejdStartup.cs` | `private IEnumerator PlayIntroCinematic()`<br>`private IEnumerator TryPlayIntroCinematic()` | [📄 View `FejdStartup.md`](Changes/assembly_valheim/FejdStartup.md) |
-| 🟡 `MOD` | `GameCamera.cs` | *Class level change* | [📄 View `GameCamera.md`](Changes/assembly_valheim/GameCamera.md) |
-| 🟡 `MOD` | `GraphicsSettingsManager.cs` | `private static void ApplyShaderKeywords(in GraphicsSettingsState settings)`<br>`private void ApplyTesselation(in GraphicsSettingsState settings)` | [📄 View `GraphicsSettingsManager.md`](Changes/assembly_valheim/GraphicsSettingsManager.md) |
-| 🟡 `MOD` | `GrapplingPoint.cs` | *Class level change* | [📄 View `GrapplingPoint.md`](Changes/assembly_valheim/GrapplingPoint.md) |
-| 🟡 `MOD` | `Humanoid.cs` | *Class level change* | [📄 View `Humanoid.md`](Changes/assembly_valheim/Humanoid.md) |
-| 🟡 `MOD` | `Inventory.cs` | *Class level change* | [📄 View `Inventory.md`](Changes/assembly_valheim/Inventory.md) |
-| 🟡 `MOD` | `InventoryGrid.cs` | *Class level change* | [📄 View `InventoryGrid.md`](Changes/assembly_valheim/InventoryGrid.md) |
-| 🟡 `MOD` | `InventoryGui.cs` | *Class level change* | [📄 View `InventoryGui.md`](Changes/assembly_valheim/InventoryGui.md) |
-| 🟡 `MOD` | `Leviathan.cs` | *Class level change* | [📄 View `Leviathan.md`](Changes/assembly_valheim/Leviathan.md) |
-| 🟡 `MOD` | `Minimap.cs` | *Class level change* | [📄 View `Minimap.md`](Changes/assembly_valheim/Minimap.md) |
-| 🟡 `MOD` | `Piece.cs` | `public static void CheckLenientBuildAchUnlocked(Achievement buildAchievement, bool afterLocalPlayerExists, bool useTagStats)`<br>`public static void CheckLenientBuildAchUnlocked(Achievement buildAchievement, bool showPopup, bool useTagStats)` | [📄 View `Piece.md`](Changes/assembly_valheim/Piece.md) |
-| 🟡 `MOD` | `Player.cs` | *Class level change* | [📄 View `Player.md`](Changes/assembly_valheim/Player.md) |
-| 🟡 `MOD` | `PlayerController.cs` | *Class level change* | [📄 View `PlayerController.md`](Changes/assembly_valheim/PlayerController.md) |
-| 🟡 `MOD` | `PresentManager.cs` | `public void RequestTargetFrameRate(int targetFrameRate, int targetRefreshRate)`<br>`public void RequestTargetFrameRate(int value)` | [📄 View `PresentManager.md`](Changes/assembly_valheim/PresentManager.md) |
-| 🟡 `MOD` | `Projectile.cs` | *Class level change* | [📄 View `Projectile.md`](Changes/assembly_valheim/Projectile.md) |
-| 🟡 `MOD` | `ReportUser.cs` | *Class level change* | [📄 View `ReportUser.md`](Changes/assembly_valheim/ReportUser.md) |
-| 🟡 `MOD` | `SEMan.cs` | *Class level change* | [📄 View `SEMan.md`](Changes/assembly_valheim/SEMan.md) |
-| 🟡 `MOD` | `StaticRotation.cs` | *Class level change* | [📄 View `StaticRotation.md`](Changes/assembly_valheim/StaticRotation.md) |
-| 🟡 `MOD` | `Terminal.cs` | *Class level change* | [📄 View `Terminal.md`](Changes/assembly_valheim/Terminal.md) |
-| 🟡 `MOD` | `TerrainComp.cs` | `private TerrainComp GetNeighbor(Vector3 worldPos, int x, int y, float radius)`<br>`private TerrainComp TryGetNeighbor(Vector3 worldPos, int x, int y, float radius)` | [📄 View `TerrainComp.md`](Changes/assembly_valheim/TerrainComp.md) |
-| 🟡 `MOD` | `Valheim.SettingsGui/AccessibilitySettings.cs` | *Class level change* | [📄 View `AccessibilitySettings.md`](Changes/assembly_valheim/AccessibilitySettings.md) |
-| 🟡 `MOD` | `Valheim.SettingsGui/GamepadSettings.cs` | *Class level change* | [📄 View `GamepadSettings.md`](Changes/assembly_valheim/GamepadSettings.md) |
-| 🟡 `MOD` | `Valheim.SettingsGui/GameplaySettings.cs` | *Class level change* | [📄 View `GameplaySettings.md`](Changes/assembly_valheim/GameplaySettings.md) |
-| 🟡 `MOD` | `Valheim.SettingsGui/KeyboardMouseSettings.cs` | `public void SetConsoleEnabled(bool enabled)` | [📄 View `KeyboardMouseSettings.md`](Changes/assembly_valheim/KeyboardMouseSettings.md) |
-| 🟡 `MOD` | `Version.cs` | *Class level change* | [📄 View `Version.md`](Changes/assembly_valheim/Version.md) |
-| 🟡 `MOD` | `ZNet.cs` | *Class level change* | [📄 View `ZNet.md`](Changes/assembly_valheim/ZNet.md) |
+| Status | Class / File | Changed Scope / Signatures |
+| :---: | :--- | :--- |
+| 🟡 `MOD` | [`Achievements.cs`](Changes/assembly_valheim/Achievements.md) | *Class level change* |
+| 🟡 `MOD` | [`AltBiomeWorldData.cs`](Changes/assembly_valheim/AltBiomeWorldData.md) | *Class level change* |
+| 🟡 `MOD` | [`Attack.cs`](Changes/assembly_valheim/Attack.md) | *Class level change* |
+| 🟡 `MOD` | [`Character.cs`](Changes/assembly_valheim/Character.md) | *Class level change* |
+| 🟡 `MOD` | [`CinematicsManager.cs`](Changes/assembly_valheim/CinematicsManager.md) | *Class level change* |
+| 🟡 `MOD` | [`FejdStartup.cs`](Changes/assembly_valheim/FejdStartup.md) | `private IEnumerator PlayIntroCinematic()`<br>`private IEnumerator TryPlayIntroCinematic()` |
+| 🟡 `MOD` | [`GameCamera.cs`](Changes/assembly_valheim/GameCamera.md) | *Class level change* |
+| 🟡 `MOD` | [`GraphicsSettingsManager.cs`](Changes/assembly_valheim/GraphicsSettingsManager.md) | `private static void ApplyShaderKeywords(in GraphicsSettingsState settings)`<br>`private void ApplyTesselation(in GraphicsSettingsState settings)` |
+| 🟡 `MOD` | [`GrapplingPoint.cs`](Changes/assembly_valheim/GrapplingPoint.md) | *Class level change* |
+| 🟡 `MOD` | [`Humanoid.cs`](Changes/assembly_valheim/Humanoid.md) | *Class level change* |
+| 🟡 `MOD` | [`Inventory.cs`](Changes/assembly_valheim/Inventory.md) | *Class level change* |
+| 🟡 `MOD` | [`InventoryGrid.cs`](Changes/assembly_valheim/InventoryGrid.md) | *Class level change* |
+| 🟡 `MOD` | [`InventoryGui.cs`](Changes/assembly_valheim/InventoryGui.md) | *Class level change* |
+| 🟡 `MOD` | [`Leviathan.cs`](Changes/assembly_valheim/Leviathan.md) | *Class level change* |
+| 🟡 `MOD` | [`Minimap.cs`](Changes/assembly_valheim/Minimap.md) | *Class level change* |
+| 🟡 `MOD` | [`Piece.cs`](Changes/assembly_valheim/Piece.md) | `public static void CheckLenientBuildAchUnlocked(Achievement buildAchievement, bool afterLocalPlayerExists, bool useTagStats)`<br>`public static void CheckLenientBuildAchUnlocked(Achievement buildAchievement, bool showPopup, bool useTagStats)` |
+| 🟡 `MOD` | [`Player.cs`](Changes/assembly_valheim/Player.md) | *Class level change* |
+| 🟡 `MOD` | [`PlayerController.cs`](Changes/assembly_valheim/PlayerController.md) | *Class level change* |
+| 🟡 `MOD` | [`PresentManager.cs`](Changes/assembly_valheim/PresentManager.md) | `public void RequestTargetFrameRate(int targetFrameRate, int targetRefreshRate)`<br>`public void RequestTargetFrameRate(int value)` |
+| 🟡 `MOD` | [`Projectile.cs`](Changes/assembly_valheim/Projectile.md) | *Class level change* |
+| 🟡 `MOD` | [`ReportUser.cs`](Changes/assembly_valheim/ReportUser.md) | *Class level change* |
+| 🟡 `MOD` | [`SEMan.cs`](Changes/assembly_valheim/SEMan.md) | *Class level change* |
+| 🟡 `MOD` | [`StaticRotation.cs`](Changes/assembly_valheim/StaticRotation.md) | *Class level change* |
+| 🟡 `MOD` | [`Terminal.cs`](Changes/assembly_valheim/Terminal.md) | *Class level change* |
+| 🟡 `MOD` | [`TerrainComp.cs`](Changes/assembly_valheim/TerrainComp.md) | `private TerrainComp GetNeighbor(Vector3 worldPos, int x, int y, float radius)`<br>`private TerrainComp TryGetNeighbor(Vector3 worldPos, int x, int y, float radius)` |
+| 🟡 `MOD` | [`Valheim.SettingsGui/AccessibilitySettings.cs`](Changes/assembly_valheim/AccessibilitySettings.md) | *Class level change* |
+| 🟡 `MOD` | [`Valheim.SettingsGui/GamepadSettings.cs`](Changes/assembly_valheim/GamepadSettings.md) | *Class level change* |
+| 🟡 `MOD` | [`Valheim.SettingsGui/GameplaySettings.cs`](Changes/assembly_valheim/GameplaySettings.md) | *Class level change* |
+| 🟡 `MOD` | [`Valheim.SettingsGui/KeyboardMouseSettings.cs`](Changes/assembly_valheim/KeyboardMouseSettings.md) | `public void SetConsoleEnabled(bool enabled)` |
+| 🟡 `MOD` | [`Version.cs`](Changes/assembly_valheim/Version.md) | *Class level change* |
+| 🟡 `MOD` | [`ZNet.cs`](Changes/assembly_valheim/ZNet.md) | *Class level change* |
 
 ---
