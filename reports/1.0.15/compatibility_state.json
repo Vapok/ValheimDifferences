@@ -1,7 +1,7 @@
 {
   "game_version": "1.0.15",
   "compared_from": "1.0.14",
-  "last_evaluated_at": "2026-09-18T13:52:48.515824+00:00",
+  "last_evaluated_at": "2026-09-21T15:06:21.635307+00:00",
   "mods": {
     "AdventureBackpacks": {
       "initial_status": "GREEN",
@@ -13,6 +13,15 @@
       "announced_at": null
     },
     "AutoFeedRedux": {
+      "initial_status": "GREEN",
+      "current_status": "GREEN",
+      "reason": "All hooks and references verified safe",
+      "resolved": true,
+      "resolved_in_version": null,
+      "announced": false,
+      "announced_at": null
+    },
+    "BepInEx.ConfigDrawers": {
       "initial_status": "GREEN",
       "current_status": "GREEN",
       "reason": "All hooks and references verified safe",
