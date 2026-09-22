@@ -1,6 +1,8 @@
 # Valheim API & Assembly Diff: `1.0.14` $\rightarrow$ `1.0.15`
 
 > Automated decompilation comparison, mod impact report, and transpiler IL safety audit generated between Valheim version **1.0.14** and **1.0.15**.
+>
+> 🛡️ **Unity Asset Diff**: [View Detailed Unity Asset Difference Report (6 Modified Prefabs)](Changes/assets/Valheim_Assets_Diff.md)
 
 ## 📊 Executive Summary
 
