@@ -2,7 +2,7 @@
 
 > Automated decompilation comparison, mod impact report, and transpiler IL safety audit generated between Valheim version **1.0.14** and **1.0.15**.
 >
-> 🛡️ **Unity Asset Diff**: [View Detailed Unity Asset Difference Report (6 Modified Prefabs)](Changes/assets/Valheim_Assets_Diff.md)
+> 🛡️ **Unity Asset Diff**: [View Detailed Unity Asset Difference Report](Changes/assets/Valheim_Assets_Diff.md)
 
 ## 📊 Executive Summary
 
@@ -33,24 +33,6 @@ Audits every Harmony Transpiler across workspace mods to verify whether the unde
   </thead>
   <tbody>
     <tr>
-      <td align="center" rowspan="2">🛡️ <code>VERIFIED SAFE</code></td>
-      <td><strong><code>AdventureBackpacks</code></strong></td>
-      <td><code>InventoryGui.Update</code></td>
-      <td><code>InventoryGui.cs:308</code></td>
-    </tr>
-    <tr>
-      <td colspan="3"><em>Class 'InventoryGui' was modified elsewhere, but method 'Update' is UNTOUCHED.</em></td>
-    </tr>
-    <tr>
-      <td align="center" rowspan="2">🛡️ <code>VERIFIED SAFE</code></td>
-      <td><strong><code>AdventureBackpacks</code></strong></td>
-      <td><code>InventoryGui.SetupRequirement</code></td>
-      <td><code>InventoryGui.cs:534</code></td>
-    </tr>
-    <tr>
-      <td colspan="3"><em>Class 'InventoryGui' was modified elsewhere, but method 'SetupRequirement' is UNTOUCHED.</em></td>
-    </tr>
-    <tr>
       <td align="center" rowspan="2">🟢 <code>SAFE</code></td>
       <td><strong><code>AdventureBackpacks</code></strong></td>
       <td><code>ItemData.GetWeight</code></td>
@@ -60,10 +42,28 @@ Audits every Harmony Transpiler across workspace mods to verify whether the unde
       <td colspan="3"><em>Class 'ItemData' and method 'GetWeight' are 100% UNCHANGED.</em></td>
     </tr>
     <tr>
+      <td align="center" rowspan="2">🛡️ <code>VERIFIED SAFE</code></td>
+      <td><strong><code>AdventureBackpacks</code></strong></td>
+      <td><code>InventoryGui.Update</code></td>
+      <td><code>InventoryGui.cs:314</code></td>
+    </tr>
+    <tr>
+      <td colspan="3"><em>Class 'InventoryGui' was modified elsewhere, but method 'Update' is UNTOUCHED.</em></td>
+    </tr>
+    <tr>
+      <td align="center" rowspan="2">🛡️ <code>VERIFIED SAFE</code></td>
+      <td><strong><code>AdventureBackpacks</code></strong></td>
+      <td><code>InventoryGui.SetupRequirement</code></td>
+      <td><code>InventoryGui.cs:543</code></td>
+    </tr>
+    <tr>
+      <td colspan="3"><em>Class 'InventoryGui' was modified elsewhere, but method 'SetupRequirement' is UNTOUCHED.</em></td>
+    </tr>
+    <tr>
       <td align="center" rowspan="2">🟢 <code>SAFE</code></td>
       <td><strong><code>AdventureBackpacks</code></strong></td>
       <td><code>Player.HaveRequirementItems</code></td>
-      <td><code>Player.cs:172</code></td>
+      <td><code>Player.cs:173</code></td>
     </tr>
     <tr>
       <td colspan="3"><em>Class 'Player' and method 'HaveRequirementItems' are 100% UNCHANGED.</em></td>
@@ -72,7 +72,7 @@ Audits every Harmony Transpiler across workspace mods to verify whether the unde
       <td align="center" rowspan="2">🟢 <code>SAFE</code></td>
       <td><strong><code>AdventureBackpacks</code></strong></td>
       <td><code>Player.ConsumeResources</code></td>
-      <td><code>Player.cs:297</code></td>
+      <td><code>Player.cs:298</code></td>
     </tr>
     <tr>
       <td colspan="3"><em>Class 'Player' and method 'ConsumeResources' are 100% UNCHANGED.</em></td>
@@ -81,7 +81,7 @@ Audits every Harmony Transpiler across workspace mods to verify whether the unde
       <td align="center" rowspan="2">🟢 <code>SAFE</code></td>
       <td><strong><code>AdventureBackpacks</code></strong></td>
       <td><code>Humanoid.UpdateEquipmentStatusEffects</code></td>
-      <td><code>Humanoid.cs:17</code></td>
+      <td><code>Humanoid.cs:18</code></td>
     </tr>
     <tr>
       <td colspan="3"><em>Class 'Humanoid' and method 'UpdateEquipmentStatusEffects' are 100% UNCHANGED.</em></td>
@@ -90,7 +90,7 @@ Audits every Harmony Transpiler across workspace mods to verify whether the unde
       <td align="center" rowspan="2">🟢 <code>SAFE</code></td>
       <td><strong><code>NoFogBruh</code></strong></td>
       <td><code>PostProcessingBehaviour.OnPreRender</code></td>
-      <td><code>DisableFogComponent.cs:297</code></td>
+      <td><code>DisableFogComponent.cs:289</code></td>
     </tr>
     <tr>
       <td colspan="3"><em>Class 'PostProcessingBehaviour' and method 'OnPreRender' are 100% UNCHANGED.</em></td>
@@ -99,7 +99,7 @@ Audits every Harmony Transpiler across workspace mods to verify whether the unde
       <td align="center" rowspan="2">🛡️ <code>VERIFIED SAFE</code></td>
       <td><strong><code>Vapok.Common</code></strong></td>
       <td><code>InventoryGui.UpdateRecipe</code></td>
-      <td><code>ItemManager.cs:2159</code></td>
+      <td><code>ItemManager.cs:2160</code></td>
     </tr>
     <tr>
       <td colspan="3"><em>Class 'InventoryGui' was modified elsewhere, but method 'UpdateRecipe' is UNTOUCHED.</em></td>
@@ -108,7 +108,7 @@ Audits every Harmony Transpiler across workspace mods to verify whether the unde
       <td align="center" rowspan="2">🛡️ <code>VERIFIED SAFE</code></td>
       <td><strong><code>Vapok.Common</code></strong></td>
       <td><code>InventoryGui.SetupRequirementList</code></td>
-      <td><code>ItemManager.cs:2160</code></td>
+      <td><code>ItemManager.cs:2161</code></td>
     </tr>
     <tr>
       <td colspan="3"><em>Class 'InventoryGui' was modified elsewhere, but method 'SetupRequirementList' is UNTOUCHED.</em></td>
@@ -134,13 +134,19 @@ Audits every Harmony Transpiler across workspace mods to verify whether the unde
   </tbody>
 </table>
 
+## 🛡️ Mod Impact: Unity Asset Cross-Reference
+
+Scans workspace mods for direct references (prefab names, item drops, status effects, and recipes) against modified Unity assets.
+
+✅ **Verified Safe**: None of the `6` modified Unity assets are referenced by active workspace mods.
+
 ## 🎯 Mod Impact Assessment
 
 Scans all workspace mod projects for Harmony patches, transpilers, and references against modified game classes.
 
 | Mod Project | Risk Level | Direct Patches on Changed Methods | Patches on Modified Classes | Touched Game Classes |
 | :--- | :---: | :--- | :--- | :--- |
-| **`AdventureBackpacks`** | 🟡 MEDIUM | *None* | `InventoryGui.OnRightClickItem`<br>`InventoryGrid.UpdateGui`<br>`Inventory.Changed`<br>`InventoryGui.OnDropOutside`<br>`Inventory.RemoveItem`<br>`Inventory.RemoveItem`<br>`Inventory.RemoveOneItem`<br>`Inventory.CanAddItem`<br>`Inventory.AddItem`<br>`Inventory.RemoveItem`<br>`InventoryGrid.DropItem`<br>`Inventory.MoveAll`<br>`Inventory.MoveItemToThis`<br>`Inventory.MoveItemToThis`<br>`Inventory.UpdateTotalWeight`<br>`Inventory.IsTeleportable`<br>`InventoryGui.DoCrafting`<br>`InventoryGui.OnSelectedItem`<br>`InventoryGui.Update`<br>`InventoryGui.SetupRequirement` | `Inventory`, `InventoryGrid`, `InventoryGui`, `ItemDrop`, `Version` |
+| **`AdventureBackpacks`** | 🟡 MEDIUM | *None* | `InventoryGui.OnRightClickItem`<br>`Inventory.Changed`<br>`InventoryGui.OnDropOutside`<br>`Inventory.RemoveItem`<br>`Inventory.RemoveItem`<br>`Inventory.RemoveOneItem`<br>`Inventory.CanAddItem`<br>`Inventory.AddItem`<br>`Inventory.RemoveItem`<br>`InventoryGrid.DropItem`<br>`Inventory.MoveAll`<br>`Inventory.MoveItemToThis`<br>`Inventory.MoveItemToThis`<br>`Inventory.UpdateTotalWeight`<br>`Inventory.IsTeleportable`<br>`InventoryGrid.UpdateGui`<br>`InventoryGui.DoCrafting`<br>`InventoryGui.OnSelectedItem`<br>`InventoryGui.Update`<br>`InventoryGui.SetupRequirement` | `Inventory`, `InventoryGrid`, `InventoryGui`, `ItemDrop`, `Version` |
 | **`AutoFeedRedux`** | 🟢 LOW | *None* | *None* | `ItemDrop`, `Version` |
 | **`BepInEx.ConfigDrawers`** | 🟢 LOW | *None* | *None* | `Version` |
 | **`BetterSleepBruh`** | 🟢 LOW | *None* | *None* | `Version` |
