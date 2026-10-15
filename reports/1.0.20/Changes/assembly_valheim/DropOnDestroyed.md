@@ -6,6 +6,12 @@
 
 ---
 
+## 🔍 Identified Changes & Methods
+
+- `OnDestroyed() [Method Body Modified]`
+
+---
+
 ## 📝 Code Diff
 
 ```diff

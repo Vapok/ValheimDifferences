@@ -8,6 +8,10 @@
 
 ## 🔍 Identified Changes & Methods
 
+- `GetItemUpgradeChance() [Method Body Modified]`
+- `IsKnownMaterial() [Method Body Modified]`
+- `Load() [Method Body Modified]`
+- `Save() [Method Body Modified]`
 - `public float GetItemUpgradeChance(int hash)`
 
 ---

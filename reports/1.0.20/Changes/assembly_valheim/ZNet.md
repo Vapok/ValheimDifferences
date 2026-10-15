@@ -6,6 +6,15 @@
 
 ---
 
+## 🔍 Identified Changes & Methods
+
+- `OnSteamServerRegistered() [Method Body Modified]`
+- `OpenServer() [Method Body Modified]`
+- `RPC_PeerInfo() [Method Body Modified]`
+- `SaveWorldThread() [Method Body Modified]`
+
+---
+
 ## 📝 Code Diff
 
 ```diff

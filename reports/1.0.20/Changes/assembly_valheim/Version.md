@@ -6,6 +6,13 @@
 
 ---
 
+## 🔍 Identified Changes & Methods
+
+- `IsPlayerVersionCompatible() [Method Body Modified]`
+- `IsWorldVersionCompatible() [Method Body Modified]`
+
+---
+
 ## 📝 Code Diff
 
 ```diff

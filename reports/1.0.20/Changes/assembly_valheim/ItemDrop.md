@@ -8,6 +8,10 @@
 
 ## 🔍 Identified Changes & Methods
 
+- `EnsureValid() [Method Body Modified]`
+- `ResetVariantIfInvalid() [Method Body Modified]`
+- `ResetVariantIfInvalid() [Method Removed]`
+- `Start() [Method Body Modified]`
 - `public void EnsureValid()`
 - `public void ResetVariantIfInvalid()`
 

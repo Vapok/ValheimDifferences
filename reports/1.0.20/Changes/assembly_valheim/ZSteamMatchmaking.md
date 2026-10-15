@@ -6,6 +6,12 @@
 
 ---
 
+## 🔍 Identified Changes & Methods
+
+- `DecodeTags() [Method Body Modified]`
+
+---
+
 ## 📝 Code Diff
 
 ```diff

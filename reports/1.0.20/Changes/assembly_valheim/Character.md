@@ -6,6 +6,12 @@
 
 ---
 
+## 🔍 Identified Changes & Methods
+
+- `OnDeath() [Method Body Modified]`
+
+---
+
 ## 📝 Code Diff
 
 ```diff

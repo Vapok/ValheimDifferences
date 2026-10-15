@@ -6,6 +6,12 @@
 
 ---
 
+## 🔍 Identified Changes & Methods
+
+- `TryLoadMinimapTextureData() [Method Body Modified]`
+
+---
+
 ## 📝 Code Diff
 
 ```diff

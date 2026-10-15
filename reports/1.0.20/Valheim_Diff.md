@@ -14,8 +14,9 @@
 | **Game Classes Deleted** | `0` |
 | **Total Lines Added** | `+215` |
 | **Total Lines Removed** | `-100` |
-| **High Risk Mod Patches** | `0` mod(s) |
-| **Medium Risk Mod Patches** | `15` mod(s) |
+| **Critical Breaking Mods** | `1` mod(s) |
+| **High Risk Mod Patches** | `13` mod(s) |
+| **Medium Risk Mod Patches** | `1` mod(s) |
 | **Transpiler Hooks Audited** | `7` total (`7` safe / `0` caution / `0` critical) |
 
 ## 🔬 Transpiler Safety Audit
@@ -106,26 +107,26 @@ Scans workspace mods for direct references (prefab names, item drops, status eff
 
 ## 🎯 Mod Impact Assessment
 
-Scans all workspace mod projects for Harmony patches, transpilers, and references against modified game classes.
+Scans all workspace mod projects for Harmony patches, transpilers, and breaking API references against modified game classes.
 
-| Mod Project | Risk Level | Direct Patches on Changed Methods | Patches on Modified Classes | Touched Game Classes |
+| Mod Project | Risk Level | Breaking API & Direct Hook Issues | Patches on Modified Classes | Touched Game Classes |
 | :--- | :---: | :--- | :--- | :--- |
-| **`AdventureBackpacks`** | 🟡 MEDIUM | *None* | `InventoryGui.OnRightClickItem`<br>`FejdStartup.Start`<br>`Inventory.Changed`<br>`InventoryGui.OnDropOutside`<br>`Inventory.RemoveItem`<br>`Inventory.RemoveItem`<br>`Inventory.RemoveOneItem`<br>`Inventory.CanAddItem`<br>`Inventory.AddItem`<br>`Inventory.AddItem`<br>`Inventory.RemoveItem`<br>`Inventory.CountItems`<br>`Inventory.HaveItem`<br>`Inventory.MoveAll`<br>`Inventory.MoveItemToThis`<br>`Inventory.MoveItemToThis`<br>`Inventory.UpdateTotalWeight`<br>`Inventory.IsTeleportable`<br>`Container.TakeAll`<br>`Container.RPC_TakeAllResponse`<br>`Container.Interact`<br>`Container.Save`<br>`Container.Load`<br>`Container.Awake`<br>`Container.IsOwner`<br>`Container.IsInUse`<br>`Container.SetInUse`<br>`Container.CheckAccess`<br>`Container.StackAll`<br>`InventoryGui.DoCrafting`<br>`InventoryGui.OnSelectedItem`<br>`InventoryGui.Update`<br>`InventoryGui.SetupRequirement`<br>`InventoryGui.UpdateRecipeList`<br>`InventoryGui.UpdateRecipe`<br>`InventoryGui.OnCraftPressed`<br>`InventoryGui.Hide`<br>`InventoryGui.CloseContainer`<br>`InventoryGui.Show`<br>`InventoryGui.OnTakeAll`<br>`Player.HaveRequirements`<br>`Player.HaveRequirements`<br>`Player.HaveRequirementItems`<br>`Player.UpdatePlacement`<br>`Player.GetFirstRequiredItem`<br>`Player.OnDestroy`<br>`Player.OnDeath`<br>`Player.UpdateEnvStatusEffects`<br>`Player.ApplyArmorDamageMods`<br>`Player.GetBodyArmor`<br>`Player.Update` | `Container`, `FejdStartup`, `Inventory`, `InventoryGui`, `ItemDrop`, `Piece`, `Player`, `Version`, `ZNet` |
-| **`AutoFeedRedux`** | 🟡 MEDIUM | *None* | `Container.Awake`<br>`Container.OnDestroyed`<br>`FejdStartup.Awake` | `Character`, `Container`, `FejdStartup`, `Inventory`, `ItemDrop`, `Player`, `Version` |
-| **`BaitMeBruh`** | 🟡 MEDIUM | *None* | `FejdStartup.Awake`<br>`Player.AttachStart`<br>`Player.CanMove`<br>`Player.SetControls`<br>`Player.OnInventoryChanged`<br>`Player.UpdateAttach`<br>`Player.UpdateKnownRecipesList`<br>`Player.UpdatePlacementGhost`<br>`Player.CheckKeyboardRadialPressed`<br>`Player.UpdateAttackBowDraw` | `Character`, `Container`, `CookingStation`, `FejdStartup`, `Inventory`, `InventoryGui`, `ItemDrop`, `Piece`, `Player`, `Version`, `ZoneSystem` |
+| **`AdventureBackpacks`** | 🔴 HIGH | ⚠️ `InventoryGui.DoCrafting` (Patch) | `InventoryGui.OnRightClickItem`<br>`FejdStartup.Start`<br>`Inventory.Changed`<br>`InventoryGui.OnDropOutside`<br>`Inventory.RemoveItem`<br>`Inventory.RemoveItem`<br>`Inventory.RemoveOneItem`<br>`Inventory.CanAddItem`<br>`Inventory.AddItem`<br>`Inventory.AddItem`<br>`Inventory.RemoveItem`<br>`Inventory.CountItems`<br>`Inventory.HaveItem`<br>`Inventory.MoveAll`<br>`Inventory.MoveItemToThis`<br>`Inventory.MoveItemToThis`<br>`Inventory.UpdateTotalWeight`<br>`Inventory.IsTeleportable`<br>`Container.TakeAll`<br>`Container.RPC_TakeAllResponse`<br>`Container.Interact`<br>`Container.Save`<br>`Container.Load`<br>`Container.Awake`<br>`Container.IsOwner`<br>`Container.IsInUse`<br>`Container.SetInUse`<br>`Container.CheckAccess`<br>`Container.StackAll`<br>`InventoryGui.OnSelectedItem`<br>`InventoryGui.Update`<br>`InventoryGui.SetupRequirement`<br>`InventoryGui.UpdateRecipeList`<br>`InventoryGui.UpdateRecipe`<br>`InventoryGui.OnCraftPressed`<br>`InventoryGui.Hide`<br>`InventoryGui.CloseContainer`<br>`InventoryGui.Show`<br>`InventoryGui.OnTakeAll`<br>`Player.HaveRequirements`<br>`Player.HaveRequirements`<br>`Player.HaveRequirementItems`<br>`Player.UpdatePlacement`<br>`Player.GetFirstRequiredItem`<br>`Player.OnDestroy`<br>`Player.OnDeath`<br>`Player.UpdateEnvStatusEffects`<br>`Player.ApplyArmorDamageMods`<br>`Player.GetBodyArmor`<br>`Player.Update` | `Container`, `FejdStartup`, `Inventory`, `InventoryGui`, `ItemDrop`, `Piece`, `Player`, `Version`, `ZNet` |
+| **`AutoFeedRedux`** | 🔴 HIGH | ⚠️ `FejdStartup.Awake` (Prefix) | `Container.Awake`<br>`Container.OnDestroyed` | `Character`, `Container`, `FejdStartup`, `Inventory`, `ItemDrop`, `Player`, `Version` |
+| **`BaitMeBruh`** | 🔴 HIGH | ⚠️ `FejdStartup.Awake` (Prefix) | `Player.AttachStart`<br>`Player.CanMove`<br>`Player.SetControls`<br>`Player.OnInventoryChanged`<br>`Player.UpdateAttach`<br>`Player.UpdateKnownRecipesList`<br>`Player.UpdatePlacementGhost`<br>`Player.CheckKeyboardRadialPressed`<br>`Player.UpdateAttackBowDraw` | `Character`, `Container`, `CookingStation`, `FejdStartup`, `Inventory`, `InventoryGui`, `ItemDrop`, `Piece`, `Player`, `Version`, `ZoneSystem` |
 | **`BepInEx.ConfigDrawers`** | 🟢 LOW | *None* | *None* | `Container`, `Version` |
-| **`BetterSleepBruh`** | 🟡 MEDIUM | *None* | `Player.AttachStart`<br>`Player.AttachStop`<br>`FejdStartup.Awake`<br>`CookingStation.GetDeltaTime`<br>`Fermenter.GetFermentationTime`<br>`Smelter.GetDeltaTime`<br>`ZNet.UpdateNetTime`<br>`ZNet.SaveWorld` | `Console`, `CookingStation`, `FejdStartup`, `Fermenter`, `Minimap`, `Player`, `PlayerProfile`, `Smelter`, `Terminal`, `Version`, `World`, `ZDOMan`, `ZNet`, `ZPlayFabMatchmaking`, `ZSteamMatchmaking`, `ZoneSystem` |
-| **`ConsoleBuddy`** | 🟡 MEDIUM | *None* | `Console.Awake`<br>`Terminal.AddString`<br>`FejdStartup.Awake` | `Console`, `FejdStartup`, `Terminal`, `Version` |
-| **`DoorOpenerBruh`** | 🟡 MEDIUM | *None* | `Player.SetLocalPlayer`<br>`FejdStartup.Awake` | `FejdStartup`, `ItemDrop`, `Piece`, `Player`, `Version`, `World` |
-| **`FastItemTransfer`** | 🟡 MEDIUM | *None* | `InventoryGui.OnRightClickItem`<br>`FejdStartup.Awake` | `FejdStartup`, `Inventory`, `InventoryGui`, `ItemDrop`, `Player`, `Version` |
-| **`NoFogBruh`** | 🟡 MEDIUM | *None* | `FejdStartup.Awake` | `FejdStartup`, `Version`, `World` |
-| **`RandomSpawnPointBruh`** | 🟡 MEDIUM | *None* | `Terminal.InitTerminal`<br>`Minimap.UpdateExplore` | `Inventory`, `ItemDrop`, `Minimap`, `Player`, `Terminal`, `Version`, `ZoneSystem` |
-| **`SaveYourLuckBruh`** | 🟡 MEDIUM | *None* | `Player.Save`<br>`Player.Load`<br>`Player.OnSpawned`<br>`Player.OnDestroy`<br>`CharacterDrop.GenerateDropList`<br>`FejdStartup.Awake` | `Character`, `CharacterDrop`, `FejdStartup`, `Player`, `Version`, `ZNet` |
-| **`ShieldMeBruh`** | 🟡 MEDIUM | *None* | `Player.OnDeath`<br>`InventoryGui.Show`<br>`Player.SetLocalPlayer`<br>`FejdStartup.Awake`<br>`Inventory.MoveItemToThis`<br>`Inventory.MoveItemToThis`<br>`Inventory.RemoveItem` | `FejdStartup`, `Inventory`, `InventoryGui`, `ItemDrop`, `Player`, `PlayerProfile`, `Version` |
-| **`TheQueensDeadBruh`** | 🟡 MEDIUM | *None* | `FejdStartup.Awake` | `FejdStartup`, `Version`, `ZoneSystem` |
+| **`BetterSleepBruh`** | 🔴 HIGH | ⚠️ `FejdStartup.Awake` (Prefix) | `Player.AttachStart`<br>`Player.AttachStop`<br>`CookingStation.GetDeltaTime`<br>`Fermenter.GetFermentationTime`<br>`Smelter.GetDeltaTime`<br>`ZNet.UpdateNetTime`<br>`ZNet.SaveWorld` | `Console`, `CookingStation`, `FejdStartup`, `Fermenter`, `Minimap`, `Player`, `PlayerProfile`, `Smelter`, `Terminal`, `Version`, `World`, `ZDOMan`, `ZNet`, `ZPlayFabMatchmaking`, `ZSteamMatchmaking`, `ZoneSystem` |
+| **`ConsoleBuddy`** | 🔴 HIGH | ⚠️ `Console.Awake` (Postfix)<br>⚠️ `FejdStartup.Awake` (Prefix) | `Terminal.AddString` | `Console`, `FejdStartup`, `Terminal`, `Version` |
+| **`DoorOpenerBruh`** | 🔴 HIGH | ⚠️ `FejdStartup.Awake` (Prefix) | `Player.SetLocalPlayer` | `FejdStartup`, `ItemDrop`, `Piece`, `Player`, `Version`, `World` |
+| **`FastItemTransfer`** | 🔴 HIGH | ⚠️ `FejdStartup.Awake` (Prefix) | `InventoryGui.OnRightClickItem` | `FejdStartup`, `Inventory`, `InventoryGui`, `ItemDrop`, `Player`, `Version` |
+| **`NoFogBruh`** | 🔴 HIGH | ⚠️ `FejdStartup.Awake` (Prefix) | *None* | `FejdStartup`, `Version`, `World` |
+| **`RandomSpawnPointBruh`** | 🔴 HIGH | ⚠️ `Terminal.InitTerminal` (Postfix) | `Minimap.UpdateExplore` | `Inventory`, `ItemDrop`, `Minimap`, `Player`, `Terminal`, `Version`, `ZoneSystem` |
+| **`SaveYourLuckBruh`** | 🚨 CRITICAL | 🚨 **Breaking API**: `CharacterDrop.s_pseudoCounter` (Field type changed from `Dictionary<string, Tuple<float, int>>` to `Dictionary<int, int>`)<br>🚨 **Breaking API**: `CharacterDrop.s_pseudoCounter` (Field type changed from `Dictionary<string, Tuple<float, int>>` to `Dictionary<int, int>`)<br>🚨 **Breaking API**: `CharacterDrop.s_pseudoCounter` (Field type changed from `Dictionary<string, Tuple<float, int>>` to `Dictionary<int, int>`)<br>🚨 **Breaking API**: `CharacterDrop.s_pseudoCounter` (Field type changed from `Dictionary<string, Tuple<float, int>>` to `Dictionary<int, int>`)<br>🚨 **Breaking API**: `CharacterDrop.s_pseudoCounter` (Field type changed from `Dictionary<string, Tuple<float, int>>` to `Dictionary<int, int>`)<br>🚨 **Breaking API**: `CharacterDrop.s_pseudoCounter` (Field type changed from `Dictionary<string, Tuple<float, int>>` to `Dictionary<int, int>`)<br>🚨 **Breaking API**: `CharacterDrop.s_pseudoCounter` (Field type changed from `Dictionary<string, Tuple<float, int>>` to `Dictionary<int, int>`)<br>🚨 **Breaking API**: `CharacterDrop.s_pseudoCounter` (Field type changed from `Dictionary<string, Tuple<float, int>>` to `Dictionary<int, int>`)<br>🚨 **Breaking API**: `CharacterDrop.s_pseudoCounter` (Field type changed from `Dictionary<string, Tuple<float, int>>` to `Dictionary<int, int>`)<br>🚨 **Breaking API**: `CharacterDrop.s_pseudoCounter` (Field type changed from `Dictionary<string, Tuple<float, int>>` to `Dictionary<int, int>`)<br>🚨 **Breaking API**: `CharacterDrop.s_pseudoCounter` (Field type changed from `Dictionary<string, Tuple<float, int>>` to `Dictionary<int, int>`)<br>🚨 **Breaking API**: `CharacterDrop.s_pseudoCounter` (Field type changed from `Dictionary<string, Tuple<float, int>>` to `Dictionary<int, int>`)<br>🚨 **Breaking API**: `CharacterDrop.s_pseudoCounter` (Field type changed from `Dictionary<string, Tuple<float, int>>` to `Dictionary<int, int>`)<br>🚨 **Breaking API**: `CharacterDrop.s_pseudoCounter` (Field type changed from `Dictionary<string, Tuple<float, int>>` to `Dictionary<int, int>`)<br>🚨 **Breaking API**: `CharacterDrop.s_pseudoCounter` (Field type changed from `Dictionary<string, Tuple<float, int>>` to `Dictionary<int, int>`)<br>🚨 **Breaking API**: `CharacterDrop.s_pseudoCounter` (Field type changed from `Dictionary<string, Tuple<float, int>>` to `Dictionary<int, int>`)<br>🚨 **Breaking API**: `CharacterDrop.s_pseudoCounter` (Field type changed from `Dictionary<string, Tuple<float, int>>` to `Dictionary<int, int>`)<br>🚨 **Breaking API**: `CharacterDrop.s_pseudoCounter` (Field type changed from `Dictionary<string, Tuple<float, int>>` to `Dictionary<int, int>`)<br>🚨 **Breaking API**: `CharacterDrop.s_pseudoCounter` (Field type changed from `Dictionary<string, Tuple<float, int>>` to `Dictionary<int, int>`)<br>🚨 **Breaking API**: `CharacterDrop.s_pseudoCounter` (Field type changed from `Dictionary<string, Tuple<float, int>>` to `Dictionary<int, int>`)<br>🚨 **Breaking API**: `CharacterDrop.s_pseudoCounter` (Field type changed from `Dictionary<string, Tuple<float, int>>` to `Dictionary<int, int>`)<br>🚨 **Breaking API**: `CharacterDrop.s_pseudoCounter` (Field type changed from `Dictionary<string, Tuple<float, int>>` to `Dictionary<int, int>`)<br>⚠️ `Player.Save` (Prefix)<br>⚠️ `Player.Load` (Prefix)<br>⚠️ `CharacterDrop.GenerateDropList` (Prefix)<br>⚠️ `FejdStartup.Awake` (Prefix) | `Player.OnSpawned`<br>`Player.OnDestroy` | `Character`, `CharacterDrop`, `FejdStartup`, `Player`, `Version`, `ZNet` |
+| **`ShieldMeBruh`** | 🔴 HIGH | ⚠️ `FejdStartup.Awake` (Prefix) | `Player.OnDeath`<br>`InventoryGui.Show`<br>`Player.SetLocalPlayer`<br>`Inventory.MoveItemToThis`<br>`Inventory.MoveItemToThis`<br>`Inventory.RemoveItem` | `FejdStartup`, `Inventory`, `InventoryGui`, `ItemDrop`, `Player`, `PlayerProfile`, `Version` |
+| **`TheQueensDeadBruh`** | 🔴 HIGH | ⚠️ `FejdStartup.Awake` (Prefix) | *None* | `FejdStartup`, `Version`, `ZoneSystem` |
 | **`Vapok.Common`** | 🟡 MEDIUM | *None* | `ZNet.OnNewConnection` | `Character`, `CharacterDrop`, `Console`, `Container`, `FejdStartup`, `Inventory`, `InventoryGui`, `ItemDrop`, `Minimap`, `Piece`, `Player`, `Smelter`, `Terminal`, `Version`, `World`, `ZNet`, `ZoneSystem` |
-| **`WardMeBruh`** | 🟡 MEDIUM | *None* | `Player.UpdateFood`<br>`Character.RPC_Damage`<br>`Smelter.Awake`<br>`Minimap.UpdatePins`<br>`Player.UpdateEnvStatusEffects`<br>`Player.SetPlayerID`<br>`Player.OnSpawned`<br>`ZNet.RPC_CharacterID`<br>`ZNet.SaveWorld`<br>`ZNet.RPC_PlayerID`<br>`FejdStartup.Awake`<br>`ZDOMan.HandleDestroyedZDO`<br>`CookingStation.Awake`<br>`Player.GetComfortLevel`<br>`Player.InShelter`<br>`Player.UpdateEnvStatusEffects`<br>`Player.UpdateEnvStatusEffects`<br>`InventoryGui.UpdateContainer`<br>`Container.Awake`<br>`Container.Interact`<br>`Container.GetHoverText`<br>`Player.Update`<br>`Piece.DropResources` | `Character`, `Console`, `Container`, `CookingStation`, `FejdStartup`, `Inventory`, `InventoryGui`, `ItemDrop`, `Minimap`, `Piece`, `Player`, `PlayerProfile`, `Smelter`, `Version`, `World`, `ZDOMan`, `ZNet`, `ZoneSystem` |
-| **`XPortalNetworks`** | 🟡 MEDIUM | *None* | `ZNet.RPC_PeerInfo`<br>`Piece.SetCreator`<br>`Piece.CanBeRemoved`<br>`ZDOMan.ConnectPortals` | `ItemDrop`, `Minimap`, `Piece`, `Player`, `Version`, `ZDOMan`, `ZNet`, `ZoneSystem` |
+| **`WardMeBruh`** | 🔴 HIGH | ⚠️ `FejdStartup.Awake` (Prefix) | `Player.UpdateFood`<br>`Character.RPC_Damage`<br>`Smelter.Awake`<br>`Minimap.UpdatePins`<br>`Player.UpdateEnvStatusEffects`<br>`Player.SetPlayerID`<br>`Player.OnSpawned`<br>`ZNet.RPC_CharacterID`<br>`ZNet.SaveWorld`<br>`ZNet.RPC_PlayerID`<br>`ZDOMan.HandleDestroyedZDO`<br>`CookingStation.Awake`<br>`Player.GetComfortLevel`<br>`Player.InShelter`<br>`Player.UpdateEnvStatusEffects`<br>`Player.UpdateEnvStatusEffects`<br>`InventoryGui.UpdateContainer`<br>`Container.Awake`<br>`Container.Interact`<br>`Container.GetHoverText`<br>`Player.Update`<br>`Piece.DropResources` | `Character`, `Console`, `Container`, `CookingStation`, `FejdStartup`, `Inventory`, `InventoryGui`, `ItemDrop`, `Minimap`, `Piece`, `Player`, `PlayerProfile`, `Smelter`, `Version`, `World`, `ZDOMan`, `ZNet`, `ZoneSystem` |
+| **`XPortalNetworks`** | 🔴 HIGH | ⚠️ `ZNet.RPC_PeerInfo` (Postfix) | `Piece.SetCreator`<br>`Piece.CanBeRemoved`<br>`ZDOMan.ConnectPortals` | `ItemDrop`, `Minimap`, `Piece`, `Player`, `Version`, `ZDOMan`, `ZNet`, `ZoneSystem` |
 
 ## 📦 Assemblies Overview
 
@@ -149,36 +150,36 @@ Scans all workspace mod projects for Harmony patches, transpilers, and reference
 
 | Status | Class / File | Changed Scope / Signatures |
 | :---: | :--- | :--- |
-| 🟡 `MOD` | [`Character.cs`](Changes/assembly_valheim/Character.md) | *Class level change* |
-| 🟡 `MOD` | [`CharacterDrop.cs`](Changes/assembly_valheim/CharacterDrop.md) | *Class level change* |
+| 🟡 `MOD` | [`Character.cs`](Changes/assembly_valheim/Character.md) | `OnDeath() [Method Body Modified]` |
+| 🟡 `MOD` | [`CharacterDrop.cs`](Changes/assembly_valheim/CharacterDrop.md) | `GenerateDropList() [Method Body Modified]`<br>`s_pseudoCounter [Field Type: Dictionary<string, Tuple<float, int>> ➔ Dictionary<int, int>]` |
 | 🟢 `ADD` | [`CheatUtils.cs`](Changes/assembly_valheim/CheatUtils.md) | *Class level change* |
-| 🟡 `MOD` | [`ChunkSaveMapping.cs`](Changes/assembly_valheim/ChunkSaveMapping.md) | *Class level change* |
-| 🟡 `MOD` | [`Console.cs`](Changes/assembly_valheim/Console.md) | *Class level change* |
-| 🟡 `MOD` | [`Container.cs`](Changes/assembly_valheim/Container.md) | *Class level change* |
-| 🟡 `MOD` | [`CookingStation.cs`](Changes/assembly_valheim/CookingStation.md) | *Class level change* |
+| 🟡 `MOD` | [`ChunkSaveMapping.cs`](Changes/assembly_valheim/ChunkSaveMapping.md) | `Save() [Method Body Modified]` |
+| 🟡 `MOD` | [`Console.cs`](Changes/assembly_valheim/Console.md) | `Awake() [Method Body Modified]` |
+| 🟡 `MOD` | [`Container.cs`](Changes/assembly_valheim/Container.md) | `AddDefaultItems() [Method Body Modified]` |
+| 🟡 `MOD` | [`CookingStation.cs`](Changes/assembly_valheim/CookingStation.md) | `DropAllItems() [Method Body Modified]` |
 | 🟡 `MOD` | [`Destructible.cs`](Changes/assembly_valheim/Destructible.md) | *Class level change* |
-| 🟡 `MOD` | [`DropOnDestroyed.cs`](Changes/assembly_valheim/DropOnDestroyed.md) | *Class level change* |
-| 🟡 `MOD` | [`FejdStartup.cs`](Changes/assembly_valheim/FejdStartup.md) | *Class level change* |
-| 🟡 `MOD` | [`Fermenter.cs`](Changes/assembly_valheim/Fermenter.md) | *Class level change* |
-| 🟡 `MOD` | [`Inventory.cs`](Changes/assembly_valheim/Inventory.md) | *Class level change* |
-| 🟡 `MOD` | [`InventoryGui.cs`](Changes/assembly_valheim/InventoryGui.md) | *Class level change* |
-| 🟡 `MOD` | [`ItemDrop.cs`](Changes/assembly_valheim/ItemDrop.md) | `public void EnsureValid()`<br>`public void ResetVariantIfInvalid()` |
-| 🟡 `MOD` | [`MasterClient.cs`](Changes/assembly_valheim/MasterClient.md) | *Class level change* |
-| 🟡 `MOD` | [`Minimap.cs`](Changes/assembly_valheim/Minimap.md) | *Class level change* |
+| 🟡 `MOD` | [`DropOnDestroyed.cs`](Changes/assembly_valheim/DropOnDestroyed.md) | `OnDestroyed() [Method Body Modified]` |
+| 🟡 `MOD` | [`FejdStartup.cs`](Changes/assembly_valheim/FejdStartup.md) | `Awake() [Method Body Modified]`<br>`JoinServer() [Method Body Modified]`<br>`SetupGui() [Method Body Modified]` |
+| 🟡 `MOD` | [`Fermenter.cs`](Changes/assembly_valheim/Fermenter.md) | `DelayedTap() [Method Body Modified]` |
+| 🟡 `MOD` | [`Inventory.cs`](Changes/assembly_valheim/Inventory.md) | `Save() [Method Body Modified]` |
+| 🟡 `MOD` | [`InventoryGui.cs`](Changes/assembly_valheim/InventoryGui.md) | `DoCrafting() [Method Body Modified]` |
+| 🟡 `MOD` | [`ItemDrop.cs`](Changes/assembly_valheim/ItemDrop.md) | `EnsureValid() [Method Body Modified]`<br>`ResetVariantIfInvalid() [Method Body Modified]`<br>`ResetVariantIfInvalid() [Method Removed]`<br>`Start() [Method Body Modified]`<br>`public void EnsureValid()`<br>*...and 1 more* |
+| 🟡 `MOD` | [`MasterClient.cs`](Changes/assembly_valheim/MasterClient.md) | `SendStats() [Method Body Modified]` |
+| 🟡 `MOD` | [`Minimap.cs`](Changes/assembly_valheim/Minimap.md) | `TryLoadMinimapTextureData() [Method Body Modified]` |
 | 🟡 `MOD` | [`Piece.cs`](Changes/assembly_valheim/Piece.md) | *Class level change* |
-| 🟡 `MOD` | [`Player.cs`](Changes/assembly_valheim/Player.md) | `public float GetItemUpgradeChance(int hash)` |
-| 🟡 `MOD` | [`PlayerProfile.cs`](Changes/assembly_valheim/PlayerProfile.md) | *Class level change* |
-| 🟡 `MOD` | [`Ragdoll.cs`](Changes/assembly_valheim/Ragdoll.md) | *Class level change* |
-| 🟡 `MOD` | [`ServerListGui.cs`](Changes/assembly_valheim/ServerListGui.md) | *Class level change* |
-| 🟡 `MOD` | [`Smelter.cs`](Changes/assembly_valheim/Smelter.md) | *Class level change* |
-| 🟡 `MOD` | [`Terminal.cs`](Changes/assembly_valheim/Terminal.md) | *Class level change* |
-| 🟡 `MOD` | [`Version.cs`](Changes/assembly_valheim/Version.md) | *Class level change* |
-| 🟡 `MOD` | [`World.cs`](Changes/assembly_valheim/World.md) | *Class level change* |
-| 🟡 `MOD` | [`ZDOMan.cs`](Changes/assembly_valheim/ZDOMan.md) | *Class level change* |
-| 🟡 `MOD` | [`ZNet.cs`](Changes/assembly_valheim/ZNet.md) | *Class level change* |
+| 🟡 `MOD` | [`Player.cs`](Changes/assembly_valheim/Player.md) | `GetItemUpgradeChance() [Method Body Modified]`<br>`IsKnownMaterial() [Method Body Modified]`<br>`Load() [Method Body Modified]`<br>`Save() [Method Body Modified]`<br>`public float GetItemUpgradeChance(int hash)` |
+| 🟡 `MOD` | [`PlayerProfile.cs`](Changes/assembly_valheim/PlayerProfile.md) | `LoadPlayerFromDisk() [Method Body Modified]`<br>`SavePlayerToDisk() [Method Body Modified]` |
+| 🟡 `MOD` | [`Ragdoll.cs`](Changes/assembly_valheim/Ragdoll.md) | `SpawnLoot() [Method Body Modified]` |
+| 🟡 `MOD` | [`ServerListGui.cs`](Changes/assembly_valheim/ServerListGui.md) | `OnPlayFabJoinCodeSuccess() [Method Body Modified]` |
+| 🟡 `MOD` | [`Smelter.cs`](Changes/assembly_valheim/Smelter.md) | `Spawn() [Method Body Modified]` |
+| 🟡 `MOD` | [`Terminal.cs`](Changes/assembly_valheim/Terminal.md) | `InitTerminal() [Method Body Modified]` |
+| 🟡 `MOD` | [`Version.cs`](Changes/assembly_valheim/Version.md) | `IsPlayerVersionCompatible() [Method Body Modified]`<br>`IsWorldVersionCompatible() [Method Body Modified]` |
+| 🟡 `MOD` | [`World.cs`](Changes/assembly_valheim/World.md) | `LoadWorld() [Method Body Modified]`<br>`SaveWorldFWLData() [Method Body Modified]` |
+| 🟡 `MOD` | [`ZDOMan.cs`](Changes/assembly_valheim/ZDOMan.md) | `SaveChunk() [Method Body Modified]` |
+| 🟡 `MOD` | [`ZNet.cs`](Changes/assembly_valheim/ZNet.md) | `OnSteamServerRegistered() [Method Body Modified]`<br>`OpenServer() [Method Body Modified]`<br>`RPC_PeerInfo() [Method Body Modified]`<br>`SaveWorldThread() [Method Body Modified]` |
 | 🟡 `MOD` | [`ZPlayFabLobbySearch.cs`](Changes/assembly_valheim/ZPlayFabLobbySearch.md) | *Class level change* |
-| 🟡 `MOD` | [`ZPlayFabMatchmaking.cs`](Changes/assembly_valheim/ZPlayFabMatchmaking.md) | *Class level change* |
-| 🟡 `MOD` | [`ZSteamMatchmaking.cs`](Changes/assembly_valheim/ZSteamMatchmaking.md) | *Class level change* |
+| 🟡 `MOD` | [`ZPlayFabMatchmaking.cs`](Changes/assembly_valheim/ZPlayFabMatchmaking.md) | `ListServers() [Method Body Modified]` |
+| 🟡 `MOD` | [`ZSteamMatchmaking.cs`](Changes/assembly_valheim/ZSteamMatchmaking.md) | `DecodeTags() [Method Body Modified]` |
 | 🟡 `MOD` | [`ZoneSystem.cs`](Changes/assembly_valheim/ZoneSystem.md) | *Class level change* |
 
 ---

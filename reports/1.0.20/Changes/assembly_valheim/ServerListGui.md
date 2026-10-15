@@ -6,6 +6,12 @@
 
 ---
 
+## 🔍 Identified Changes & Methods
+
+- `OnPlayFabJoinCodeSuccess() [Method Body Modified]`
+
+---
+
 ## 📝 Code Diff
 
 ```diff

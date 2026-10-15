@@ -6,6 +6,13 @@
 
 ---
 
+## 🔍 Identified Changes & Methods
+
+- `LoadPlayerFromDisk() [Method Body Modified]`
+- `SavePlayerToDisk() [Method Body Modified]`
+
+---
+
 ## 📝 Code Diff
 
 ```diff

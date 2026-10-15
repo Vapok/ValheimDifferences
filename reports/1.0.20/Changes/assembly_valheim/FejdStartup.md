@@ -6,6 +6,14 @@
 
 ---
 
+## 🔍 Identified Changes & Methods
+
+- `Awake() [Method Body Modified]`
+- `JoinServer() [Method Body Modified]`
+- `SetupGui() [Method Body Modified]`
+
+---
+
 ## 📝 Code Diff
 
 ```diff

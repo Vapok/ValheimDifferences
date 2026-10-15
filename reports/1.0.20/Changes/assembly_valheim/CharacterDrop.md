@@ -6,6 +6,19 @@
 
 ---
 
+## ⚠️ Modified Fields (Type Signature Changes)
+
+- `public/static s_pseudoCounter`: `Dictionary<string, Tuple<float, int>>` ➔ `Dictionary<int, int>`
+
+---
+
+## 🔍 Identified Changes & Methods
+
+- `GenerateDropList() [Method Body Modified]`
+- `s_pseudoCounter [Field Type: Dictionary<string, Tuple<float, int>> ➔ Dictionary<int, int>]`
+
+---
+
 ## 📝 Code Diff
 
 ```diff

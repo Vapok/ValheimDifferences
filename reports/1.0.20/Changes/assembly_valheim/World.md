@@ -6,6 +6,13 @@
 
 ---
 
+## 🔍 Identified Changes & Methods
+
+- `LoadWorld() [Method Body Modified]`
+- `SaveWorldFWLData() [Method Body Modified]`
+
+---
+
 ## 📝 Code Diff
 
 ```diff

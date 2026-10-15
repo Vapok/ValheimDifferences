@@ -6,6 +6,12 @@
 
 ---
 
+## 🔍 Identified Changes & Methods
+
+- `DoCrafting() [Method Body Modified]`
+
+---
+
 ## 📝 Code Diff
 
 ```diff

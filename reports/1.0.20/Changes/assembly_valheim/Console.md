@@ -6,6 +6,12 @@
 
 ---
 
+## 🔍 Identified Changes & Methods
+
+- `Awake() [Method Body Modified]`
+
+---
+
 ## 📝 Code Diff
 
 ```diff
