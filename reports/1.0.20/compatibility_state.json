@@ -123,10 +123,10 @@
     },
     "Vapok.Common": {
       "initial_status": "YELLOW",
-      "current_status": "YELLOW",
-      "reason": "Patches class modified elsewhere: ZNet",
-      "resolved": false,
-      "resolved_in_version": null,
+      "current_status": "GREEN",
+      "reason": "Resolved in release v3.1020.1",
+      "resolved": true,
+      "resolved_in_version": "3.1020.1",
       "announced": false,
       "announced_at": null
     },
