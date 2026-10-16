@@ -16,7 +16,7 @@
 | **Total Lines Removed** | `-100` |
 | **Critical Breaking Mods** | `1` mod(s) |
 | **High Risk Mod Patches** | `13` mod(s) |
-| **Medium Risk Mod Patches** | `1` mod(s) |
+| **Medium Risk Mod Patches** | `0` mod(s) |
 | **Transpiler Hooks Audited** | `7` total (`7` safe / `0` caution / `0` critical) |
 
 ## 🔬 Transpiler Safety Audit
@@ -34,6 +34,15 @@ Audits every Harmony Transpiler across workspace mods to verify whether the unde
   </thead>
   <tbody>
     <tr>
+      <td align="center" rowspan="2">🛡️ <code>VERIFIED SAFE</code></td>
+      <td><strong><code>AdventureBackpacks</code></strong></td>
+      <td><code>InventoryGui.Update</code></td>
+      <td><code>InventoryGui.cs:378</code></td>
+    </tr>
+    <tr>
+      <td colspan="3"><em>Class 'InventoryGui' was modified elsewhere, but method 'Update' is UNTOUCHED.</em></td>
+    </tr>
+    <tr>
       <td align="center" rowspan="2">🟢 <code>SAFE</code></td>
       <td><strong><code>AdventureBackpacks</code></strong></td>
       <td><code>Humanoid.UpdateEquipmentStatusEffects</code></td>
@@ -46,19 +55,10 @@ Audits every Harmony Transpiler across workspace mods to verify whether the unde
       <td align="center" rowspan="2">🟢 <code>SAFE</code></td>
       <td><strong><code>AdventureBackpacks</code></strong></td>
       <td><code>ItemData.GetWeight</code></td>
-      <td><code>ItemDrop.cs:17</code></td>
+      <td><code>ItemDrop.cs:22</code></td>
     </tr>
     <tr>
       <td colspan="3"><em>Class 'ItemData' and method 'GetWeight' are 100% UNCHANGED.</em></td>
-    </tr>
-    <tr>
-      <td align="center" rowspan="2">🛡️ <code>VERIFIED SAFE</code></td>
-      <td><strong><code>AdventureBackpacks</code></strong></td>
-      <td><code>InventoryGui.Update</code></td>
-      <td><code>InventoryGui.cs:378</code></td>
-    </tr>
-    <tr>
-      <td colspan="3"><em>Class 'InventoryGui' was modified elsewhere, but method 'Update' is UNTOUCHED.</em></td>
     </tr>
     <tr>
       <td align="center" rowspan="2">🛡️ <code>VERIFIED SAFE</code></td>
@@ -124,7 +124,7 @@ Scans all workspace mod projects for Harmony patches, transpilers, and breaking 
 | **`SaveYourLuckBruh`** | 🚨 CRITICAL | 🚨 **Breaking API**: `CharacterDrop.s_pseudoCounter` (Field type changed from `Dictionary<string, Tuple<float, int>>` to `Dictionary<int, int>`)<br>🚨 **Breaking API**: `CharacterDrop.s_pseudoCounter` (Field type changed from `Dictionary<string, Tuple<float, int>>` to `Dictionary<int, int>`)<br>🚨 **Breaking API**: `CharacterDrop.s_pseudoCounter` (Field type changed from `Dictionary<string, Tuple<float, int>>` to `Dictionary<int, int>`)<br>🚨 **Breaking API**: `CharacterDrop.s_pseudoCounter` (Field type changed from `Dictionary<string, Tuple<float, int>>` to `Dictionary<int, int>`)<br>🚨 **Breaking API**: `CharacterDrop.s_pseudoCounter` (Field type changed from `Dictionary<string, Tuple<float, int>>` to `Dictionary<int, int>`)<br>🚨 **Breaking API**: `CharacterDrop.s_pseudoCounter` (Field type changed from `Dictionary<string, Tuple<float, int>>` to `Dictionary<int, int>`)<br>🚨 **Breaking API**: `CharacterDrop.s_pseudoCounter` (Field type changed from `Dictionary<string, Tuple<float, int>>` to `Dictionary<int, int>`)<br>🚨 **Breaking API**: `CharacterDrop.s_pseudoCounter` (Field type changed from `Dictionary<string, Tuple<float, int>>` to `Dictionary<int, int>`)<br>🚨 **Breaking API**: `CharacterDrop.s_pseudoCounter` (Field type changed from `Dictionary<string, Tuple<float, int>>` to `Dictionary<int, int>`)<br>🚨 **Breaking API**: `CharacterDrop.s_pseudoCounter` (Field type changed from `Dictionary<string, Tuple<float, int>>` to `Dictionary<int, int>`)<br>🚨 **Breaking API**: `CharacterDrop.s_pseudoCounter` (Field type changed from `Dictionary<string, Tuple<float, int>>` to `Dictionary<int, int>`)<br>🚨 **Breaking API**: `CharacterDrop.s_pseudoCounter` (Field type changed from `Dictionary<string, Tuple<float, int>>` to `Dictionary<int, int>`)<br>🚨 **Breaking API**: `CharacterDrop.s_pseudoCounter` (Field type changed from `Dictionary<string, Tuple<float, int>>` to `Dictionary<int, int>`)<br>🚨 **Breaking API**: `CharacterDrop.s_pseudoCounter` (Field type changed from `Dictionary<string, Tuple<float, int>>` to `Dictionary<int, int>`)<br>🚨 **Breaking API**: `CharacterDrop.s_pseudoCounter` (Field type changed from `Dictionary<string, Tuple<float, int>>` to `Dictionary<int, int>`)<br>🚨 **Breaking API**: `CharacterDrop.s_pseudoCounter` (Field type changed from `Dictionary<string, Tuple<float, int>>` to `Dictionary<int, int>`)<br>🚨 **Breaking API**: `CharacterDrop.s_pseudoCounter` (Field type changed from `Dictionary<string, Tuple<float, int>>` to `Dictionary<int, int>`)<br>🚨 **Breaking API**: `CharacterDrop.s_pseudoCounter` (Field type changed from `Dictionary<string, Tuple<float, int>>` to `Dictionary<int, int>`)<br>🚨 **Breaking API**: `CharacterDrop.s_pseudoCounter` (Field type changed from `Dictionary<string, Tuple<float, int>>` to `Dictionary<int, int>`)<br>🚨 **Breaking API**: `CharacterDrop.s_pseudoCounter` (Field type changed from `Dictionary<string, Tuple<float, int>>` to `Dictionary<int, int>`)<br>🚨 **Breaking API**: `CharacterDrop.s_pseudoCounter` (Field type changed from `Dictionary<string, Tuple<float, int>>` to `Dictionary<int, int>`)<br>🚨 **Breaking API**: `CharacterDrop.s_pseudoCounter` (Field type changed from `Dictionary<string, Tuple<float, int>>` to `Dictionary<int, int>`)<br>⚠️ `Player.Save` (Prefix)<br>⚠️ `CharacterDrop.GenerateDropList` (Prefix)<br>⚠️ `FejdStartup.Awake` (Prefix)<br>⚠️ `Player.Load` (Prefix) | `Player.OnSpawned`<br>`Player.OnDestroy` | `Character`, `CharacterDrop`, `FejdStartup`, `Player`, `Version`, `ZNet` |
 | **`ShieldMeBruh`** | 🔴 HIGH | ⚠️ `FejdStartup.Awake` (Prefix) | `Player.OnDeath`<br>`InventoryGui.Show`<br>`Player.SetLocalPlayer`<br>`Inventory.MoveItemToThis`<br>`Inventory.MoveItemToThis`<br>`Inventory.RemoveItem` | `FejdStartup`, `Inventory`, `InventoryGui`, `ItemDrop`, `Player`, `PlayerProfile`, `Version` |
 | **`TheQueensDeadBruh`** | 🔴 HIGH | ⚠️ `FejdStartup.Awake` (Prefix) | *None* | `FejdStartup`, `Version`, `ZoneSystem` |
-| **`Vapok.Common`** | 🟡 MEDIUM | *None* | `ZNet.OnNewConnection` | `Character`, `CharacterDrop`, `Console`, `Container`, `FejdStartup`, `Inventory`, `InventoryGui`, `ItemDrop`, `Minimap`, `Piece`, `Player`, `Smelter`, `Terminal`, `Version`, `World`, `ZNet`, `ZoneSystem` |
+| **`Vapok.Common`** | 🟢 LOW | *None* | *None* | `Character`, `CharacterDrop`, `Console`, `Container`, `FejdStartup`, `Inventory`, `InventoryGui`, `ItemDrop`, `Minimap`, `Piece`, `Player`, `Smelter`, `Terminal`, `Version`, `World`, `ZNet`, `ZoneSystem` |
 | **`WardMeBruh`** | 🔴 HIGH | ⚠️ `FejdStartup.Awake` (Prefix) | `Player.UpdateFood`<br>`Character.RPC_Damage`<br>`Smelter.Awake`<br>`Minimap.UpdatePins`<br>`Player.UpdateEnvStatusEffects`<br>`Player.SetPlayerID`<br>`Player.OnSpawned`<br>`ZNet.RPC_CharacterID`<br>`ZNet.SaveWorld`<br>`ZNet.RPC_PlayerID`<br>`ZDOMan.HandleDestroyedZDO`<br>`CookingStation.Awake`<br>`Player.GetComfortLevel`<br>`Player.InShelter`<br>`Player.UpdateEnvStatusEffects`<br>`Player.UpdateEnvStatusEffects`<br>`InventoryGui.UpdateContainer`<br>`Container.Awake`<br>`Container.Interact`<br>`Container.GetHoverText`<br>`Player.Update`<br>`Piece.DropResources` | `Character`, `Console`, `Container`, `CookingStation`, `FejdStartup`, `Inventory`, `InventoryGui`, `ItemDrop`, `Minimap`, `Piece`, `Player`, `PlayerProfile`, `Smelter`, `Version`, `World`, `ZDOMan`, `ZNet`, `ZoneSystem` |
 | **`XPortalNetworks`** | 🔴 HIGH | ⚠️ `ZNet.RPC_PeerInfo` (Postfix) | `Piece.SetCreator`<br>`Piece.CanBeRemoved`<br>`ZDOMan.ConnectPortals` | `ItemDrop`, `Minimap`, `Piece`, `Player`, `Version`, `ZDOMan`, `ZNet`, `ZoneSystem` |
 
