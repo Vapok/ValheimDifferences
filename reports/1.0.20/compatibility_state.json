@@ -2,7 +2,7 @@
   "game_version": "1.0.20",
   "compared_from": "1.0.17",
   "discord_message_id": "1560220876555812875",
-  "last_evaluated_at": "2026-10-16T21:08:37.504004+00:00",
+  "last_evaluated_at": "2026-10-16T21:08:57.557011+00:00",
   "mods": {
     "AdventureBackpacks": {
       "initial_status": "YELLOW",
@@ -79,9 +79,9 @@
     "NoFogBruh": {
       "initial_status": "YELLOW",
       "current_status": "GREEN",
-      "reason": "Resolved in release v2.1.3",
+      "reason": "Resolved in release v2.1.4",
       "resolved": true,
-      "resolved_in_version": "2.1.3",
+      "resolved_in_version": "2.1.4",
       "announced": false,
       "announced_at": null
     },
