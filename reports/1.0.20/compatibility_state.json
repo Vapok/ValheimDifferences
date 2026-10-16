@@ -2,7 +2,7 @@
   "game_version": "1.0.20",
   "compared_from": "1.0.17",
   "discord_message_id": "1560220876555812875",
-  "last_evaluated_at": "2026-10-16T21:09:54.746729+00:00",
+  "last_evaluated_at": "2026-10-16T21:10:12.090167+00:00",
   "mods": {
     "AdventureBackpacks": {
       "initial_status": "YELLOW",
@@ -115,9 +115,9 @@
     "TheQueensDeadBruh": {
       "initial_status": "YELLOW",
       "current_status": "GREEN",
-      "reason": "Resolved in release v2.0.11",
+      "reason": "Resolved in release v2.0.12",
       "resolved": true,
-      "resolved_in_version": "2.0.11",
+      "resolved_in_version": "2.0.12",
       "announced": false,
       "announced_at": null
     },
