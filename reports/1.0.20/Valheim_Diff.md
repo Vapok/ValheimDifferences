@@ -34,13 +34,13 @@ Audits every Harmony Transpiler across workspace mods to verify whether the unde
   </thead>
   <tbody>
     <tr>
-      <td align="center" rowspan="2">🛡️ <code>VERIFIED SAFE</code></td>
+      <td align="center" rowspan="2">🟢 <code>SAFE</code></td>
       <td><strong><code>AdventureBackpacks</code></strong></td>
-      <td><code>InventoryGui.Update</code></td>
-      <td><code>InventoryGui.cs:378</code></td>
+      <td><code>ItemData.GetWeight</code></td>
+      <td><code>ItemDrop.cs:22</code></td>
     </tr>
     <tr>
-      <td colspan="3"><em>Class 'InventoryGui' was modified elsewhere, but method 'Update' is UNTOUCHED.</em></td>
+      <td colspan="3"><em>Class 'ItemData' and method 'GetWeight' are 100% UNCHANGED.</em></td>
     </tr>
     <tr>
       <td align="center" rowspan="2">🟢 <code>SAFE</code></td>
@@ -52,13 +52,13 @@ Audits every Harmony Transpiler across workspace mods to verify whether the unde
       <td colspan="3"><em>Class 'Humanoid' and method 'UpdateEquipmentStatusEffects' are 100% UNCHANGED.</em></td>
     </tr>
     <tr>
-      <td align="center" rowspan="2">🟢 <code>SAFE</code></td>
+      <td align="center" rowspan="2">🛡️ <code>VERIFIED SAFE</code></td>
       <td><strong><code>AdventureBackpacks</code></strong></td>
-      <td><code>ItemData.GetWeight</code></td>
-      <td><code>ItemDrop.cs:22</code></td>
+      <td><code>InventoryGui.Update</code></td>
+      <td><code>InventoryGui.cs:381</code></td>
     </tr>
     <tr>
-      <td colspan="3"><em>Class 'ItemData' and method 'GetWeight' are 100% UNCHANGED.</em></td>
+      <td colspan="3"><em>Class 'InventoryGui' was modified elsewhere, but method 'Update' is UNTOUCHED.</em></td>
     </tr>
     <tr>
       <td align="center" rowspan="2">🛡️ <code>VERIFIED SAFE</code></td>
@@ -111,7 +111,7 @@ Scans all workspace mod projects for Harmony patches, transpilers, and breaking 
 
 | Mod Project | Risk Level | Breaking API & Direct Hook Issues | Patches on Modified Classes | Touched Game Classes |
 | :--- | :---: | :--- | :--- | :--- |
-| **`AdventureBackpacks`** | 🔴 HIGH | ⚠️ `InventoryGui.DoCrafting` (Patch) | `InventoryGui.OnRightClickItem`<br>`FejdStartup.Start`<br>`Inventory.Changed`<br>`InventoryGui.OnDropOutside`<br>`Inventory.RemoveItem`<br>`Inventory.RemoveItem`<br>`Inventory.RemoveOneItem`<br>`Inventory.CanAddItem`<br>`Inventory.AddItem`<br>`Inventory.AddItem`<br>`Inventory.RemoveItem`<br>`Inventory.CountItems`<br>`Inventory.HaveItem`<br>`Inventory.MoveAll`<br>`Inventory.MoveItemToThis`<br>`Inventory.MoveItemToThis`<br>`Inventory.UpdateTotalWeight`<br>`Inventory.IsTeleportable`<br>`Container.TakeAll`<br>`Container.RPC_TakeAllResponse`<br>`Container.Interact`<br>`Container.Save`<br>`Container.Load`<br>`Container.Awake`<br>`Container.IsOwner`<br>`Container.IsInUse`<br>`Container.SetInUse`<br>`Container.CheckAccess`<br>`Container.StackAll`<br>`InventoryGui.OnSelectedItem`<br>`InventoryGui.Update`<br>`InventoryGui.SetupRequirement`<br>`InventoryGui.UpdateRecipeList`<br>`InventoryGui.UpdateRecipe`<br>`InventoryGui.OnCraftPressed`<br>`InventoryGui.Hide`<br>`InventoryGui.CloseContainer`<br>`InventoryGui.Show`<br>`InventoryGui.OnTakeAll`<br>`Player.HaveRequirements`<br>`Player.HaveRequirements`<br>`Player.HaveRequirementItems`<br>`Player.UpdatePlacement`<br>`Player.GetFirstRequiredItem`<br>`Player.OnDestroy`<br>`Player.OnDeath`<br>`Player.UpdateEnvStatusEffects`<br>`Player.ApplyArmorDamageMods`<br>`Player.GetBodyArmor`<br>`Player.Update` | `Container`, `FejdStartup`, `Inventory`, `InventoryGui`, `ItemDrop`, `Piece`, `Player`, `Version`, `ZNet` |
+| **`AdventureBackpacks`** | 🔴 HIGH | ⚠️ `InventoryGui.DoCrafting` (Patch) | `InventoryGui.OnRightClickItem`<br>`FejdStartup.Start`<br>`Inventory.Changed`<br>`InventoryGui.OnDropOutside`<br>`Inventory.RemoveItem`<br>`Inventory.RemoveItem`<br>`Inventory.RemoveOneItem`<br>`Inventory.CanAddItem`<br>`Inventory.AddItem`<br>`Inventory.AddItem`<br>`Inventory.RemoveItem`<br>`Inventory.CountItems`<br>`Inventory.HaveItem`<br>`Inventory.MoveAll`<br>`Inventory.MoveItemToThis`<br>`Inventory.MoveItemToThis`<br>`Inventory.UpdateTotalWeight`<br>`Inventory.IsTeleportable`<br>`Container.TakeAll`<br>`Container.RPC_TakeAllResponse`<br>`Container.Interact`<br>`Container.Save`<br>`Container.Load`<br>`Container.Awake`<br>`Container.IsOwner`<br>`Container.IsInUse`<br>`Container.SetInUse`<br>`Container.CheckAccess`<br>`Container.StackAll`<br>`Player.HaveRequirements`<br>`Player.HaveRequirements`<br>`Player.HaveRequirementItems`<br>`Player.UpdatePlacement`<br>`Player.GetFirstRequiredItem`<br>`Player.OnDestroy`<br>`Player.OnDeath`<br>`Player.UpdateEnvStatusEffects`<br>`Player.ApplyArmorDamageMods`<br>`Player.GetBodyArmor`<br>`Player.Update`<br>`InventoryGui.OnSelectedItem`<br>`InventoryGui.Update`<br>`InventoryGui.SetupRequirement`<br>`InventoryGui.UpdateRecipeList`<br>`InventoryGui.UpdateRecipe`<br>`InventoryGui.OnCraftPressed`<br>`InventoryGui.Hide`<br>`InventoryGui.CloseContainer`<br>`InventoryGui.Show`<br>`InventoryGui.OnTakeAll` | `Container`, `FejdStartup`, `Inventory`, `InventoryGui`, `ItemDrop`, `Piece`, `Player`, `Version`, `ZNet` |
 | **`AutoFeedRedux`** | 🔴 HIGH | ⚠️ `FejdStartup.Awake` (Prefix) | `Container.Awake`<br>`Container.OnDestroyed` | `Character`, `Container`, `FejdStartup`, `Inventory`, `ItemDrop`, `Player`, `Version` |
 | **`BaitMeBruh`** | 🔴 HIGH | ⚠️ `FejdStartup.Awake` (Prefix) | `Player.AttachStart`<br>`Player.CanMove`<br>`Player.SetControls`<br>`Player.OnInventoryChanged`<br>`Player.UpdateAttach`<br>`Player.UpdateKnownRecipesList`<br>`Player.UpdatePlacementGhost`<br>`Player.CheckKeyboardRadialPressed`<br>`Player.UpdateAttackBowDraw` | `Character`, `Container`, `CookingStation`, `FejdStartup`, `Inventory`, `InventoryGui`, `ItemDrop`, `Piece`, `Player`, `Version`, `ZoneSystem` |
 | **`BepInEx.ConfigDrawers`** | 🟢 LOW | *None* | *None* | `Container`, `Version` |
