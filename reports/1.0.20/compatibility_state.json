@@ -2,14 +2,14 @@
   "game_version": "1.0.20",
   "compared_from": "1.0.17",
   "discord_message_id": "1560220876555812875",
-  "last_evaluated_at": "2026-10-18T16:36:50.519139+00:00",
+  "last_evaluated_at": "2026-10-21T13:56:21.930906+00:00",
   "mods": {
     "AdventureBackpacks": {
       "initial_status": "YELLOW",
       "current_status": "GREEN",
-      "reason": "Resolved in release v2.4.5",
+      "reason": "Resolved in release v2.4.6",
       "resolved": true,
-      "resolved_in_version": "2.4.5",
+      "resolved_in_version": "2.4.6",
       "announced": false,
       "announced_at": null
     },
