@@ -36,15 +36,6 @@ Audits every Harmony Transpiler across workspace mods to verify whether the unde
     <tr>
       <td align="center" rowspan="2">🟢 <code>SAFE</code></td>
       <td><strong><code>AdventureBackpacks</code></strong></td>
-      <td><code>ItemData.GetWeight</code></td>
-      <td><code>ItemDrop.cs:22</code></td>
-    </tr>
-    <tr>
-      <td colspan="3"><em>Class 'ItemData' and method 'GetWeight' are 100% UNCHANGED.</em></td>
-    </tr>
-    <tr>
-      <td align="center" rowspan="2">🟢 <code>SAFE</code></td>
-      <td><strong><code>AdventureBackpacks</code></strong></td>
       <td><code>Humanoid.UpdateEquipmentStatusEffects</code></td>
       <td><code>Humanoid.cs:19</code></td>
     </tr>
@@ -55,10 +46,19 @@ Audits every Harmony Transpiler across workspace mods to verify whether the unde
       <td align="center" rowspan="2">🛡️ <code>VERIFIED SAFE</code></td>
       <td><strong><code>AdventureBackpacks</code></strong></td>
       <td><code>InventoryGui.Update</code></td>
-      <td><code>InventoryGui.cs:382</code></td>
+      <td><code>InventoryGui.cs:385</code></td>
     </tr>
     <tr>
       <td colspan="3"><em>Class 'InventoryGui' was modified elsewhere, but method 'Update' is UNTOUCHED.</em></td>
+    </tr>
+    <tr>
+      <td align="center" rowspan="2">🟢 <code>SAFE</code></td>
+      <td><strong><code>AdventureBackpacks</code></strong></td>
+      <td><code>ItemData.GetWeight</code></td>
+      <td><code>ItemDrop.cs:22</code></td>
+    </tr>
+    <tr>
+      <td colspan="3"><em>Class 'ItemData' and method 'GetWeight' are 100% UNCHANGED.</em></td>
     </tr>
     <tr>
       <td align="center" rowspan="2">🛡️ <code>VERIFIED SAFE</code></td>
