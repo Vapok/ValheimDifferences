@@ -1,9 +1,9 @@
 {
   "game_version": "1.0.30",
   "compared_from": "1.0.21",
-  "discord_message_id": null,
+  "discord_message_id": "1575089258492989622",
   "first_evaluated_at": "2026-11-25T15:52:19.093457+00:00",
-  "last_evaluated_at": "2026-11-25T15:52:21.711480+00:00",
+  "last_evaluated_at": "2026-11-25T15:53:45.165325+00:00",
   "mods": {
     "AdventureBackpacks": {
       "initial_status": "YELLOW",
