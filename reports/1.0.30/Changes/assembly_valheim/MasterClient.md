@@ -1,0 +1,29 @@
+# `MasterClient.cs` Diff (`1.0.21` $\rightarrow$ `1.0.30`)
+
+* **Assembly**: `assembly_valheim.dll`
+* **Status**: `🟡 MODIFIED` (`+1/-1` lines)
+* **Main Report**: [⬅ Back to Main Diff Report](../../Valheim_Diff.md)
+
+---
+
+## 🔍 Identified Changes & Methods
+
+- `SendStats() [Method Body Modified]`
+
+---
+
+## 📝 Code Diff
+
+```diff
+--- a/MasterClient.cs
++++ b/MasterClient.cs
+@@ -85,7 +85,7 @@
+ 		bool flag2 = (bool)ZNet.instance && !ZNet.instance.IsServer();
+ 		zPackage.Write(flag2 ? duration : 0f);
+ 		zPackage.Write(Version.CurrentVersion.ToString());
+-		zPackage.Write(41u);
++		zPackage.Write(42u);
+ 		bool flag3 = (bool)ZNet.instance && ZNet.instance.IsServer();
+ 		zPackage.Write(flag3);
+ 		if (flag3)
+```

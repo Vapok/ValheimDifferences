@@ -1,0 +1,152 @@
+{
+  "game_version": "1.0.30",
+  "compared_from": "1.0.21",
+  "discord_message_id": null,
+  "last_evaluated_at": "2026-11-25T10:02:20.038414+00:00",
+  "mods": {
+    "AdventureBackpacks": {
+      "initial_status": "YELLOW",
+      "current_status": "YELLOW",
+      "reason": "Patches modified method: KeyHints.UpdateHints",
+      "resolved": false,
+      "resolved_in_version": null,
+      "announced": false,
+      "announced_at": null
+    },
+    "AutoFeedRedux": {
+      "initial_status": "YELLOW",
+      "current_status": "YELLOW",
+      "reason": "Patches modified method: FejdStartup.Awake",
+      "resolved": false,
+      "resolved_in_version": null,
+      "announced": false,
+      "announced_at": null
+    },
+    "BaitMeBruh": {
+      "initial_status": "YELLOW",
+      "current_status": "YELLOW",
+      "reason": "Patches modified method: FejdStartup.Awake",
+      "resolved": false,
+      "resolved_in_version": null,
+      "announced": false,
+      "announced_at": null
+    },
+    "BepInEx.ConfigDrawers": {
+      "initial_status": "GREEN",
+      "current_status": "GREEN",
+      "reason": "All hooks and references verified safe",
+      "resolved": true,
+      "resolved_in_version": null,
+      "announced": false,
+      "announced_at": null
+    },
+    "BetterSleepBruh": {
+      "initial_status": "YELLOW",
+      "current_status": "YELLOW",
+      "reason": "Patches modified method: FejdStartup.Awake",
+      "resolved": false,
+      "resolved_in_version": null,
+      "announced": false,
+      "announced_at": null
+    },
+    "ConsoleBuddy": {
+      "initial_status": "YELLOW",
+      "current_status": "YELLOW",
+      "reason": "Patches modified method: Console.Awake",
+      "resolved": false,
+      "resolved_in_version": null,
+      "announced": false,
+      "announced_at": null
+    },
+    "DoorOpenerBruh": {
+      "initial_status": "YELLOW",
+      "current_status": "YELLOW",
+      "reason": "Patches modified method: FejdStartup.Awake",
+      "resolved": false,
+      "resolved_in_version": null,
+      "announced": false,
+      "announced_at": null
+    },
+    "FastItemTransfer": {
+      "initial_status": "YELLOW",
+      "current_status": "YELLOW",
+      "reason": "Patches modified method: FejdStartup.Awake",
+      "resolved": false,
+      "resolved_in_version": null,
+      "announced": false,
+      "announced_at": null
+    },
+    "NoFogBruh": {
+      "initial_status": "YELLOW",
+      "current_status": "YELLOW",
+      "reason": "Patches modified method: EnvMan.SetEnv",
+      "resolved": false,
+      "resolved_in_version": null,
+      "announced": false,
+      "announced_at": null
+    },
+    "RandomSpawnPointBruh": {
+      "initial_status": "YELLOW",
+      "current_status": "YELLOW",
+      "reason": "Patches modified method: Terminal.InitTerminal",
+      "resolved": false,
+      "resolved_in_version": null,
+      "announced": false,
+      "announced_at": null
+    },
+    "SaveYourLuckBruh": {
+      "initial_status": "YELLOW",
+      "current_status": "YELLOW",
+      "reason": "Patches modified method: FejdStartup.Awake",
+      "resolved": false,
+      "resolved_in_version": null,
+      "announced": false,
+      "announced_at": null
+    },
+    "ShieldMeBruh": {
+      "initial_status": "YELLOW",
+      "current_status": "YELLOW",
+      "reason": "Patches modified method: FejdStartup.Awake",
+      "resolved": false,
+      "resolved_in_version": null,
+      "announced": false,
+      "announced_at": null
+    },
+    "TheQueensDeadBruh": {
+      "initial_status": "YELLOW",
+      "current_status": "YELLOW",
+      "reason": "Patches modified method: EnvMan.SetEnv",
+      "resolved": false,
+      "resolved_in_version": null,
+      "announced": false,
+      "announced_at": null
+    },
+    "Vapok.Common": {
+      "initial_status": "GREEN",
+      "current_status": "GREEN",
+      "reason": "All hooks and references verified safe",
+      "resolved": true,
+      "resolved_in_version": null,
+      "announced": false,
+      "announced_at": null
+    },
+    "WardMeBruh": {
+      "initial_status": "YELLOW",
+      "current_status": "YELLOW",
+      "reason": "Patches modified method: FejdStartup.Awake",
+      "resolved": false,
+      "resolved_in_version": null,
+      "announced": false,
+      "announced_at": null
+    },
+    "XPortalNetworks": {
+      "initial_status": "YELLOW",
+      "current_status": "YELLOW",
+      "reason": "Patches modified method: ZNet.RPC_PeerInfo",
+      "resolved": false,
+      "resolved_in_version": null,
+      "announced": false,
+      "announced_at": null
+    }
+  }
+}
