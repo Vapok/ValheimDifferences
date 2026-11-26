@@ -10,6 +10,7 @@ Maintained by **[Vapok](https://github.com/Vapok)**.
 
 | Version | Assemblies Modified | Game Classes Changed | Unity Assets Changed | Transpiler Safety |
 | :---: | :---: | :---: | :---: | :---: |
+| [**`1.0.31`**](reports/1.0.31/Valheim_Diff.md) | `1` | `4` modified | [`68` assets](reports/1.0.31/Changes/assets/Valheim_Assets_Diff.md) | `7` Safe |
 | [**`1.0.30`**](reports/1.0.30/Valheim_Diff.md) | `2` | `60` modified | [`14` assets](reports/1.0.30/Changes/assets/Valheim_Assets_Diff.md) | `7` Safe |
 | [**`1.0.21`**](reports/1.0.21/Valheim_Diff.md) | `2` | `35` modified | [`0` assets](reports/1.0.21/Changes/assets/Valheim_Assets_Diff.md) | `7` Safe |
 | [**`1.0.20`**](reports/1.0.20/Valheim_Diff.md) | `1` | `30` modified | [`0` assets](reports/1.0.20/Changes/assets/Valheim_Assets_Diff.md) | `7` Safe |
