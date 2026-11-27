@@ -3,7 +3,7 @@
   "compared_from": "1.0.30",
   "discord_message_id": "1575519047829692561",
   "first_evaluated_at": "2026-11-26T14:30:09.204450+00:00",
-  "last_evaluated_at": "2026-11-26T14:34:05.034019+00:00",
+  "last_evaluated_at": "2026-11-27T09:08:38.262104+00:00",
   "mods": {
     "AdventureBackpacks": {
       "initial_status": "GREEN",
@@ -48,10 +48,10 @@
     "BetterSleepBruh": {
       "initial_status": "YELLOW",
       "current_status": "GREEN",
-      "reason": "Verified safe (CookingStation.GetDeltaTime untouched)",
+      "reason": "Resolved in release v2.1.5",
       "baseline_version": "2.1.4",
       "resolved": true,
-      "resolved_in_version": null,
+      "resolved_in_version": "2.1.5",
       "announced": false,
       "announced_at": null
     },
